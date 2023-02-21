@@ -234,7 +234,206 @@ p>input {
     top: 10.2vw
 }
 
-/*  */
+/* Блок 4 Hit`s*/
+
+.content_hits {
+    padding-left: 13.229vw;
+    padding-top: 10.313vw;
+}
+
+.menu_hits {
+    width: 74.010vw;
+    height: 86.042vw;
+    background: rgba(218, 121, 121, 0.25);
+}
+
+/* Блок 5 конструктор*/
+
+.content_construct {
+    padding-top: 10.833vw;
+}
+
+.menu_construct {
+    width: 98.7vw;
+    height: 41.146vw;
+    background-image:url("img/logo/muillu-B6EOsmCLVSM-unspla.png");
+}
+
+.menu_text_construct {
+    padding-left: 7.656vw;
+    padding-top: 9.271vw;
+}
+
+.menu_text_construct h3 {
+    font-family: MakLight;
+    color: #f1efec;
+    font-size: 3.333vw;
+}
+
+.menu_text_construct p {
+    font-family: Montserrat;
+    color: #f1efec;
+    font-size: 1.5vw;
+}
+
+.menu_text_construct>.col-1-1 {
+    width: 50%;
+    float: left;
+}
+
+.menu_text_construct>.col-2-1 {
+    width: 50%;
+    float: right;
+}
+
+.col-2-1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10.6vw;
+}
+
+.col-2-1 p a {
+    font-family: Montserrat;
+    color: #f1efec;
+    font-size: 1.3vw;
+    border: #f1efec 1px solid;
+    padding: 1.5vw 3.5vw 1.5vw 3.5vw;
+}
+
+/* Доставка и оплата */
+
+.delivery {
+    padding-top: 9.323vw;
+    padding-left: 7.656vw;
+}
+
+.delivery_menu {
+    width: 84.531vw;
+    height: 50.156vw;
+}
+
+.flex_delivery {
+    display: flex;
+}
+
+.content_delivery_menu h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.333vw;
+    font-family: Mak;
+    margin: 0;
+}
+
+.col-5-1 {
+    width: 55.885vw;
+    height: 42.604vw;
+}
+
+.line {
+    border-bottom: 1px solid black; /* Параметры линии */
+    margin-top: 3.646vw;
+    padding-top: 5.833vw;
+}
+
+.line_one {
+    padding-top: 0;
+}
+
+.flex_content_delivery {
+    display: flex;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.right h2 {
+    margin-left: 12vw;
+    margin-right: 2vw;
+}
+
+.left h2 {
+    margin-right: 9.5vw;
+}
+
+.flex_content_delivery h2 {
+    font-family: Mak;
+    font-size: 3.333vw;
+}
+
+.flex_content_delivery p {
+    font-family: Montserrat;
+    font-size: 1.667vw;
+    padding-top: 0.9vw;
+}
+
+.col-5-2 {
+    width: 25.490vw;
+    height: 42.604vw;
+    margin-left: 3.156vw;
+}
+
+.img_wrap {
+    position: relative;
+}
+
+.img_wrap img{
+    position: absolute;
+}
+
+.img_one {
+    width: 19.271vw;
+    margin-left: 4.12vw;
+    padding-left: 2vw;
+}
+
+.img_two {
+    width: 13.646vw;
+    margin-top: 19.219vw;
+    padding-left: 2vw;
+}
+
+.img_three {
+    width: 12.604vw;
+    padding-top: 5.188vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
