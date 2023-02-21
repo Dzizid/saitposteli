@@ -138,8 +138,9 @@ p>input {
 }
 
 .content_center h1 {
-    font-family: Mak;
-    font-size: 11.21vw;
+    font-family: "Mak Light";
+    font-weight: normal;
+    font-size: 12.21vw;
     margin: 7.500vw 0 0 0;
 }
 
@@ -214,8 +215,9 @@ p>input {
 .about_us h2 {
     text-align: center;
     font-size: 3.333vw;
-    font-family: MakLight;
+    font-family: "Mak Light";
     margin-bottom: -1vw;
+    font-weight: normal;
 }
 
 .about_us p {
@@ -265,7 +267,8 @@ p>input {
 }
 
 .menu_text_construct h3 {
-    font-family: MakLight;
+    font-family: "Mak Light";
+    font-weight: normal;
     color: #f1efec;
     font-size: 3.333vw;
 }
@@ -320,8 +323,9 @@ p>input {
     display: flex;
     justify-content: center;
     font-size: 3.333vw;
-    font-family: Mak;
+    font-family: "Mak Light";
     margin: 0;
+    font-weight: normal;
 }
 
 .col-5-1 {
@@ -402,12 +406,89 @@ p>input {
     padding-top: 5.188vw;
 }
 
+/* Повторение PosteliBell */
 
+.rectangle {
+    width: 98.7vw;
+    height: 2.604vw;
+    background: #3D3C3C;
+}
 
+.glitch {
+    display: flex;
+}
 
+.glitch h1 {
+    font-family: "Mak Light";
+    font-weight: normal;
+    color: #f1efec;
+    margin: 0 4.167vw 0 0;
+    padding: 0;
+    font-size: 2.500vw;
+}
 
+/* Блок контакта */
 
+.contacts {
+    padding-top: 8.542vw;
+    padding-left: 38.333vw;
+}
 
+.contacts_menu {
+    width: 24.375vw;
+    height: 28.229vw;
+}
+
+.contacts_menu_flex {
+    text-align: center;
+}
+
+.contacts_menu_flex h1 {
+    font-family: "Mak Light";
+    font-size: 3.333vw;
+    font-weight: normal;
+}
+
+.contacts_address > h2 {
+    font-size: 2.083vw;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.contacts_contact > h2 {
+    font-size: 2.083vw;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.contacts_address > p {
+    font-size: 1.250vw;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.contacts_contact > p {
+    font-size: 1.250vw;
+    font-family: Montserrat;
+    font-weight: normal;
+}
+
+.contacts_mess img{
+    padding-top: 2vw;
+    padding-right: 1.3vw;
+    display: flex;
+    width: 1vw;
+}
+
+.contacts_mess .contacts_mess_justify {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts_address_flex {
+    display: flex;
+    justify-content: center;
+}
 
 
 
