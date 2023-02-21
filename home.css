@@ -24,6 +24,11 @@ body {
     background: #f1efec;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .container {
     display: flex;
     font-family: Montserrat;
@@ -40,7 +45,7 @@ body {
 }
 
 .logo_width {
-    width: 28px;
+    width: 38px;
     padding-top: 0.7vw;
 }
 
@@ -70,6 +75,7 @@ body {
 ul>li {
     display: inline;
     padding-left: 3.1vw;
+    font-size: 1vw;
 }
 
 ul>li>a {
@@ -90,13 +96,18 @@ ul>li>a {
 p>input {
     background: #f1efec;
     width: 8vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    outline: none;
 }
 
 /* Второй блок */
 
 .container_two {
     padding-top: 4vw;
-    padding-left: 13.281vw;
+    padding-left: 12.5vw;
 }
 
 .content {
@@ -184,11 +195,46 @@ p>input {
     }
 }
 
+/* Блок 3 О нас */
 
+.content_about {
+    padding-top: 10vw;
+    padding-left: 7.760vw;
+}
 
+.about_px {
+    border: black 1px solid;
+    width: 84.427vw;
+}
 
+.about_us {
+    padding-bottom: 2vw;
+}
 
+.about_us h2 {
+    text-align: center;
+    font-size: 3.333vw;
+    font-family: MakLight;
+    margin-bottom: -1vw;
+}
 
+.about_us p {
+    text-align: center;
+    font-size: 2.083vw;
+    font-family: Montserrat;
+    padding: 0 10.156vw 10.542vw 10.156vw;
+    position: absolute;
+    margin-left: 7.852vw;
+}
+
+.decor_abs {
+    width: 12.604vw;
+    position: relative;
+    padding-left: 69.042vw;
+    top: 10.2vw
+}
+
+/*  */
 
 
 
