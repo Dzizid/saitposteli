@@ -181,7 +181,7 @@ p>input {
 
 .logo_mess {
     padding-left: 23.76vw;
-    padding-top: 13vw;
+    padding-top: 11vw;
 }
 
 .logo_mess img {
@@ -236,23 +236,11 @@ p>input {
     top: 10.2vw
 }
 
-/* Блок 4 Hit`s*/
-
-.content_hits {
-    padding-left: 13.229vw;
-    padding-top: 10.313vw;
-}
-
-.menu_hits {
-    width: 74.010vw;
-    height: 86.042vw;
-    background: rgba(218, 121, 121, 0.25);
-}
 
 /* Блок 5 конструктор*/
 
 .content_construct {
-    padding-top: 10.833vw;
+    padding-top: 3.833vw;
 }
 
 .menu_construct {
@@ -490,17 +478,187 @@ p>input {
     justify-content: center;
 }
 
+/* footer */
 
+.footer_flex {
+    background: #3D3C3C;
+    width: 98.7vw;
+    height: 25.365vw;
+    display: flex;
+}
 
+.col-7-1 {
+    padding-left: 7.760vw;
+    padding-top: 4.948vw;
+}
 
+.bar_info_one {
+    width: 18.229vw;
+    height: 14.844vw;
+}
 
+.bar_info_one img {
+    width: 2.500vw;
+}
 
+.bar_info_one p {
+    color: #f1efec;
+    font-size: 1.042vw;
+}
 
+.col-7-2 {
+    padding-left: 23.125vw;
+    padding-top: 4vw;
+}
 
+.bar_info_two {
+    width: 11.354vw;
+    height: 14.844vw;
+}
 
+.bar_info_two ul {
+    padding-left: 0;
+}
 
+.bar_info_two ul li {
+    color: #f1efec;
+    display: block;
+    padding-left: 0;
+}
 
+.bar_info {
+    color: #f1efec;
+}
 
+.bar_info_two ul li:not(:first-child) {
+    padding-top: 2vw;
+}
+
+.col-7-3 {
+    padding-left: 15.573vw;
+    padding-top: 4vw;
+}
+
+.bar_info_three {
+    width: 21.958vw;
+    height: 14.844vw;
+}
+
+.bar_info_three p {
+    color: #f1efec;
+    font-size: 1.042vw;
+}
+
+.contacts_footer_img {
+    display: flex;
+}
+
+.contacts_footer_img img {
+    padding: 0 1vw 0 0;
+}
+
+/* Блок 4 Hit`s*/
+
+.content_hits {
+    padding-left: 13.229vw;
+    padding-top: 10.313vw;
+}
+
+.menu_hits {
+    width: 74.010vw;
+    height: 86.042vw;
+}
+
+.menu_hits h1 {
+    font-family: "Mak Light";
+    font-weight: normal;
+    font-size: 3.333vw;
+    text-align: center;
+}
+
+.catalog_menu {
+    display: flex;
+    padding-bottom: 5.206vw;
+}
+
+.catalog_element {
+    margin-right: 8.888vw;
+    width: 18.8vw;
+    height: 30.896vw;
+}
+
+.catalog_element img {
+    width: 18.75vw;
+}
+
+.catalog_element_one {
+
+}
+
+.info_element {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_element p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.729vw;
+    font-family: Montserrat;
+}
+
+.info_element_left_bar h2 {
+    font-size: 1.471vw;
+    font-family: "Mak Light";
+    font-weight: normal;
+    margin-bottom: 0.6vw;
+    margin-top: 1vw;
+}
+
+.info_element_left_bar h3 {
+    font-size: 1.471vw;
+    font-family: "Mak Light";
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.info_element_right_bar img {
+    width: 1vw;
+    border: 1px black solid;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+}
+
+.info_element_right_bar img {
+    margin-top: 1.83vw;
+}
+
+.info_element_right_bar p a {
+    border: 1px black solid;
+    padding: 0.65vw 1vw 0.6vw 1vw;
+}
+
+.info_element_right_bar p {
+    margin-top: 2.5vw;
+    font-size: 0.729vw;
+}
+
+.info_element_right_bar {
+    display: flex;
+}
+
+.menu_hits .download {
+    border: 1px black solid;
+    padding: 1.575vw 4.688vw 1.575vw 4.688vw;
+}
+
+.download_position {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
 
 
 
