@@ -66,6 +66,7 @@ a {
 .col-3-3 {
     width: 18vw;
     padding-top: 0.8vw;
+    padding-top: 0;
 }
 
 .col-3-3 .position_left {
@@ -87,10 +88,12 @@ ul>li>a {
     padding-top: 0.9vw;
     width: 0.8vw;
     display: inline;
+    font-size: 0.938vw;
 }
 
 .fish_menu {
-    width: 18px;
+    width: 0.938vw;
+    margin-top: 18px;
 }
 
 p>input {
@@ -240,7 +243,7 @@ p>input {
 /* Блок 5 конструктор*/
 
 .content_construct {
-    padding-top: 3.833vw;
+    padding-top: 5.833vw;
 }
 
 .menu_construct {
@@ -566,7 +569,6 @@ p>input {
 
 .menu_hits {
     width: 74.010vw;
-    height: 86.042vw;
 }
 
 .menu_hits h1 {
@@ -660,8 +662,17 @@ p>input {
     justify-content: center
 }
 
+.download_position p {
+    font-size: 1.2vw;
+}
 
-
+.wrapper-boxes {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 115%;
+}
 
 
 
