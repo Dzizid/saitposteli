@@ -690,6 +690,8 @@ p>input {
     width: 115%;
 }
 
+/* Модальное окно конструктора */
+
 .modal {
     display: none;
     position: fixed;
@@ -709,21 +711,130 @@ p>input {
     margin-top: 1.5vw;
     margin-left: 5.375vw;
     height: 45vw;
+    display: flex;
+}
+
+.modal-content h1 {
+    position: absolute;
+    font-family: "Mak Light";
+    font-weight: normal;
+    font-size: 5.8vw;
+    padding-top: 2.583vw;
+    padding-left: 3vw;
 }
 
 .close {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    justify-content: right;
 }
 
+.col-9-1 {
+    width: 40%;
+    height: 100%;
+/*    background: rgba(231, 107, 107, 0.18); */
+}
 
+.col-9-2 {
+    width: 64%;
+    height: 100%;
+/*    background: rgba(190, 231, 107, 0.18); */
+}
 
+.col-9-2 h2 {
+    padding-left: 3vw;
+    font-family: "Mak Light";
+    font-weight: normal;
+    font-size: 1.8vw;
+    padding-top: 13vw;
+}
 
+.col-9-2 h3 {
+    color: black;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 1.8vw;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-bottom: 1.2vw;
+}
 
+.col-9-2 p {
+    padding-left: 3.1vw;
+    display: inline;
+    color: black;
+    font-size: 1.1vw;
+}
 
+.col-9-2 img {
+    padding-left: 0.2vw;
+    width: 0.5vw;
+}
 
+.col-9-1 img {
+    float: right;
+    justify-content: right;
+    width: 33.75vw;
+}
 
+.color-complect {
+    display: flex;
+}
+
+.col-9-2-1 {
+/*  background: rgba(107, 113, 231, 0.18); */
+    display: flex;
+}
+
+.col-9-2-1 h3 {
+    padding-top: 0;
+    font-size: 1.3vw;
+    font-family: Montserrat;
+    font-weight: normal;
+    margin-top: 1vw;
+}
+
+.col-9-2-2 {
+/*    background: rgba(107, 113, 231, 0.18); */
+    display: flex;
+}
+
+.col-9-2-2 h3 {
+    padding-top: 0;
+    font-size: 1.3vw;
+    padding-left: 7vw;
+    font-family: Montserrat;
+    font-weight: normal;
+    margin-top: 1vw;
+}
+
+.col-9-2-1 img {
+    padding-left: 1vw;
+}
+
+.col-9-2-2 img {
+    padding-left: 1vw;
+}
+
+.color input {
+    width: 10.5vw;
+}
+
+.col-9-2-2 p {
+    padding-left: 6.3vw;
+}
+
+.download_position_modal {
+    padding-top: 5.4vw;
+}
+
+.download_position_modal .download_one {
+    color: black;
+    border: 1px solid black;
+    padding: 1.2vw 4vw 1.2vw 4vw;
+}
 
 
 
