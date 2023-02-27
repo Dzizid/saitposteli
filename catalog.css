@@ -20,6 +20,11 @@
     text-rendering: optimizeLegibility;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #f1efec;
 }
@@ -61,6 +66,7 @@ a {
 .col-2-3 {
     width: 60vw;
     text-align: center;
+    padding-top: 1vw;
 }
 
 .col-3-3 {
@@ -176,10 +182,12 @@ p>input {
 .bar_info_three p {
     color: #f1efec;
     font-size: 1.042vw;
+    padding-top: 0.7vw;
 }
 
 .contacts_footer_img {
     display: flex;
+    padding-top: 0.7vw;
 }
 
 .contacts_footer_img img {
@@ -215,7 +223,7 @@ p>input {
 
 .catalog_menu {
     display: flex;
-    padding-bottom: 5.206vw;
+
 }
 
 .catalog_element {
@@ -229,7 +237,7 @@ p>input {
 }
 
 .catalog_element_one {
-
+    padding-bottom: 4.219vw;
 }
 
 .info_element {
@@ -331,5 +339,6 @@ select option {
 }
 
 .from_select {
+    padding-top: 2.5vw;
     padding-right: 6vw;
 }

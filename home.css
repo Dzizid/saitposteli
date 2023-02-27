@@ -20,6 +20,11 @@
     text-rendering: optimizeLegibility;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #f1efec;
 }
@@ -61,11 +66,11 @@ a {
 .col-2-3 {
     width: 60vw;
     text-align: center;
+    padding-top: 1vw;
 }
 
 .col-3-3 {
     width: 18vw;
-    padding-top: 0.8vw;
     padding-top: 0;
 }
 
@@ -219,7 +224,7 @@ p>input {
     text-align: center;
     font-size: 3.333vw;
     font-family: "Mak Light";
-    margin-bottom: -1vw;
+    margin-bottom: 1vw;
     font-weight: normal;
 }
 
@@ -421,7 +426,7 @@ p>input {
 /* Блок контакта */
 
 .contacts {
-    padding-top: 8.542vw;
+    padding-top: 4.542vw;
     padding-left: 38.333vw;
 }
 
@@ -444,12 +449,14 @@ p>input {
     font-size: 2.083vw;
     font-family: Montserrat;
     font-weight: normal;
+    margin-top: 1vw;
 }
 
 .contacts_contact > h2 {
     font-size: 2.083vw;
     font-family: Montserrat;
     font-weight: normal;
+    margin-top: 1vw;
 }
 
 .contacts_address > p {
@@ -486,7 +493,7 @@ p>input {
 .footer_flex {
     background: #3D3C3C;
     width: 98.7vw;
-    height: 25.365vw;
+    height: 20.365vw;
     display: flex;
 }
 
@@ -560,6 +567,15 @@ p>input {
     padding: 0 1vw 0 0;
 }
 
+.bar_info_three > p {
+    padding-top: 0.7vw;
+}
+
+.contacts_footer_img > a {
+    padding-top: 0.9vw;
+    padding-right: 0.1vw;
+}
+
 /* Блок 4 Hit`s*/
 
 .content_hits {
@@ -594,7 +610,7 @@ p>input {
 }
 
 .catalog_element_one {
-
+    padding-top: 4.219vw;
 }
 
 .info_element {
