@@ -222,6 +222,7 @@ p>input {
 
 .about_us h2 {
     text-align: center;
+    padding-top: 2.5vw;
     font-size: 3.333vw;
     font-family: "Mak Light";
     margin-bottom: 1vw;
@@ -836,11 +837,61 @@ p>input {
     padding: 1.2vw 4vw 1.2vw 4vw;
 }
 
+#myBtnOne {
+    color: black;
+    font-size: 1vw;
+    border: 1px solid black;
+}
 
+#myBtnTwo {
+    color: black;
+    font-size: 1vw;
+    border: 1px solid black;
+}
 
+#myBtnThree {
+    color: black;
+    font-size: 1vw;
+    border: 1px solid black;
+}
 
+#myBtnFoo {
+    color: black;
+    font-size: 1vw;
+    border: 1px solid black;
+}
 
+.further {
+    position: absolute;
+    margin-top: 40vw;
+}
 
+.data_name {
+    padding-top: 5vw;
+}
+
+.data_name p input {
+    width: 15vw;
+    font-size: 1vw;
+}
+
+.data_name_checkbox input {
+    margin-top: 1vw;
+    margin-right: 0.2vw;
+}
+
+.data_name_checkbox {
+    padding-left: 3vw;
+}
+
+.col-9-5 {
+    padding-left: 13vw;
+    padding-top: 13vw;
+}
+
+.justify_one {
+    padding-left: 3vw;
+}
 
 
 
