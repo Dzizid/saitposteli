@@ -20,3 +20,181 @@
     text-rendering: optimizeLegibility;
 }
 
+main {
+    padding-bottom: 3vw;
+}
+
+.container_basket {
+    width: 84.375vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.container_basket h1 {
+    text-align: center;
+    font-family: "Mak Light";
+    font-size: 2.3vw;
+}
+
+.container_basket_product {
+    padding-top: 2vw;
+}
+
+.top {
+    display: flex;
+    width: 84.375vw;
+}
+
+.container_basket_product h3 {
+    text-align: center;
+    font-family: "Mak Light";
+    font-weight: normal;
+    font-size: 1.3vw;
+}
+
+.top {
+    padding-top: 3vw;
+}
+
+.top .center {
+    padding-left: 1.5vw;
+}
+
+.top .center {
+    padding-left: 35vw;
+}
+
+.end {
+    padding-left: 34vw;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    color: black; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
+    width: 100%;
+}
+
+.basket_product {
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.basket_product_one {
+/    background: rgba(255, 0, 0, 0.23);
+    display: flex;
+    padding-bottom: 1.5vw;
+}
+
+.img img {
+    width: 13.021vw;
+}
+
+.menu_one {
+    padding-left: 1vw;
+}
+
+.menu_one_top {
+/    background: rgba(208, 255, 0, 0.23);
+}
+
+.menu_one_top h2 {
+    font-family: Montserrat;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
+.menu_one_top h4 {
+    font-family: "Mak Light";
+    font-size: 1.2vw;
+    padding-top: 1vw;
+}
+
+.menu_one_top h5 {
+    font-family: Montserrat;
+    font-size: 1vw;
+    padding-top: 0.7vw;
+}
+
+.info_text {
+    display: flex;
+}
+
+.info_text_left h3 {
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 1vw;
+    padding-top: 0.3vw;
+}
+
+.info_text_left p {
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: normal;
+    color: #3D3C3C;
+    padding-left: 1vw;
+    padding-top: 0.5vw;
+}
+
+.praise {
+    margin: auto;
+}
+
+.all {
+    display: flex;
+    margin: auto;
+}
+
+.all img {
+    margin-top: 0.3vw;
+    height: 0.8vw;
+}
+
+.design_flex {
+    display: flex;
+}
+
+.design {
+    text-align: end;
+    padding-top: 1.5vw;
+    padding-right: 9.7vw;
+}
+
+#myBtnDesign {
+    border: 1px solid black;
+    font-size: 1.3vw;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+}
+
+.summ p {
+    font-family: "Mak Light";
+    font-size: 2.5vw;
+    text-align: end;
+}
+
+.modal {
+    padding-top: 1.5vw;
+}
+
+.modal-design {
+
+    margin: auto;
+    width: 39.427vw;
+    height: 65vw;
+    background: #f1efec;
+}
+
+
+
+
+
+
+
+
+
+
+
