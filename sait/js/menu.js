@@ -38,7 +38,7 @@ window.onclick = function (event) {
 
 var modalOne = document.getElementById('myModalOne');
 var btnOne = document.getElementById('myBtnOne');
-var spanOne = document.getElementsByClassName("close")[0];
+var spanOne = document.getElementsByClassName("close")[1];
 
 btnOne.onclick = function () {
     modalOne.style.display = "block";
@@ -108,8 +108,12 @@ window.onclick = function (event) {
     }
 }
 
+function viewDiv(){
+    document.getElementById("menu_wrap").style.display = "block";
+    document.getElementById("mobile").style.display = "none"
+}
 
-
-
-
+function closeDiv(){
+    document.getElementById("menu_wrap").style.display = "none"
+}
 

@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sait/css/home.css">
+    <link rel="stylesheet" href="sait/html/footer/footer.css">
     <title>Bella</title>
 </head>
 <body>
@@ -13,31 +14,71 @@
 
     <header class="container_max">
 
-        <nav class="container">
+        <div class="container">
             <div class="col-1-3">
-                <img class="logo_width" src="img/logo/logoblack.png">
+                <a href="home.html"><img class="logo_width" src="img/logo/logoblack.png"></a>
             </div>
             <div class="col-2-3">
                 <ul>
                     <li style="padding-left: 1vw"><a href="#HIT`S">HIT`S</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="#">О нас</a></li>
+                    <li><a href="sait/html/catalog.html">Каталог</a></li>
+                    <li><a href="#about_us">О нас</a></li>
                     <li><a href="#delivery">Доставка и оплата</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
             <div class="col-3-3">
                 <div class="position_left">
                 <img class="fish_menu" src="img/logo/heart-regular.svg">
-                <p class="fish">BAG</p>
+                <p class="fish"><a href="sait/html/basket.html">BAG</a></p>
                 <img class="fish_menu" src="img/logo/circle-solid.svg">
                 <img class="fish_menu" src="img/logo/magnifying-glass-solid.svg">
                 <p class="fish"><input type="search" name="q" placeholder=""></p>
                 </div>
             </div>
-        </nav>
+        </div>
 
+        <div class="mobile" id="mobile">
+            <div class="container_mobile" id="container_mobile">
+                <div class="mob-1-3">
+                    <img class="logo" src="img/logo/logoblack.png" alt="">
+                </div>
+                <img src="img/logo/bars-solid.svg" onmousedown="viewDiv()">
+                <div class="mob-2-3">
+                    <h2>BAG</h2>
+                    <img class="logo_width" src="img/logo/circle-solid.svg" alt="">
+                    <img class="logo_width" src="img/logo/heart-regular.svg" alt="">
+                </div>
+            </div>
+        </div>
     </header>
+
+    <div id="menu_wrap">
+        <div class="container_menu_mobile">
+            <div class="logo_mobile">
+                <img class="logo_mobile_white" onmousedown="closeDiv()" src="img/logo/logowhite.png" alt="">
+            </div>
+            <div class="menu_bar">
+                <div class="container_bar">
+                    <p>Комплекты постельного белья</p>
+                    <p>Постельные принадлежности</p>
+                    <p>Отдельные предметы</p>
+                    <p>Покрывала и пледы</p>
+                    <p>Текстиль для кухни</p>
+                    <p>Полотенца</p>
+                </div>
+            </div>
+            <div class="mess_info_bar_mobile container_bar">
+                <h1>Собрать свой собственный комплект</h1>
+                <p>+ 7 (999) 999-99-99</p>
+                    <div class="img_mobile_img">
+                        <a><img src="/img/logo/vkwhite.png" alt=""></a>
+                        <a><img src="/img/logo/telegramwhite.png" alt=""></a>
+                        <a><img src="/img/logo/viberwhite.png" alt=""></a>
+                    </div>
+            </div>
+        </div>
+    </div>
 
     <main>
 
@@ -48,13 +89,13 @@
                 </div>
                 <div class="content_center">
                     <h1>PosteliBell</h1>
-                    <p><a href="#"  >Перейти в каталог</a></p>
+                    <p><a href="sait/html/catalog.html"  >Перейти в каталог</a></p>
                     <p class="natural">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnatural <br> 100% materials </p>
                     
                     <div class="logo_mess">
                         <a href="#"><img src="img/logo/vk.svg" alt="#"></a>
                         <a href="#"><img src="img/logo/telegram.svg" alt="#"></a>
-                        <a href="#"><img src="img/logo/instagram.svg" alt="#"></a>
+                        <a href="#"><img src="img/logo/viber.svg" alt="#"></a>
                     </div>
                     
                     
@@ -66,7 +107,7 @@
             </div>
         </div>
 
-        <div class="content_about">
+        <div class="content_about" id="about_us">
             <div class="about_px">
                 <div class="about_us">
                     <h2>О нас</h2>
@@ -101,8 +142,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="#">Подробнее</a></p>
-                                    <a href="#"><img src="img/logo/heart-regular.svg" alt=""></a>
+                                    <p><a href="sait/html/card.html">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +151,7 @@
 
                     <!-- Дублирование объекта -->
                     <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
+                        <img src="img/catalog/gaelle-marcel-DFt3T5r_4FE-unsplash%202.png" alt="">
 
                         <div>
                             <div class="info_element">
@@ -128,8 +168,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="#">Подробнее</a></p>
-                                    <a href="#"><img src="img/logo/heart-regular.svg" alt=""></a>
+                                    <p><a href="sait/html/card.html">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +176,7 @@
                     </div>
 
                     <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
+                        <img src="img/catalog/pexels-vlada-karpovich-4050423%202.png" alt="">
 
                         <div>
                             <div class="info_element">
@@ -154,8 +193,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="#">Подробнее</a></p>
-                                    <a href="#"><img src="img/logo/heart-regular.svg" alt=""></a>
+                                    <p><a href="sait/html/card.html">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +201,7 @@
                     </div>
 
                     <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
+                        <img src="img/catalog/bright-and-clean-modern-bedroom-in-scandinavian-style%201.png" alt="">
 
                         <div>
                             <div class="info_element">
@@ -180,8 +218,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="#">Подробнее</a></p>
-                                    <a href="#"><img src="img/logo/heart-regular.svg" alt=""></a>
+                                    <p><a href="sait/html/card.html">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +226,7 @@
                     </div>
 
                     <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
+                        <img src="img/catalog/mia-moessinger-8PLkPBoI_TU-unsplash%202.png" alt="">
 
                         <div>
                             <div class="info_element">
@@ -206,8 +243,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="#">Подробнее</a></p>
-                                    <a href="#"><img src="img/logo/heart-regular.svg" alt=""></a>
+                                    <p><a href="sait/html/card.html">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +251,7 @@
                     </div>
 
                     <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
+                        <img src="img/catalog/svitlana-ASB-wPXJFGE-unsplash%201.png" alt="">
 
                         <div>
                             <div class="info_element">
@@ -232,8 +268,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="#">Подробнее</a></p>
-                                    <a href="#"><img src="img/logo/heart-regular.svg" alt=""></a>
+                                    <p><a href="sait/html/card.html">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +382,6 @@
                                             <div class="further">
                                                 <p><a id="myBtnTwo">Далее</a></p>
                                             </div>
-
                                             <div id="myModalTwo" class="modal">
                                                 <div class="modal-content">
                                                     <h1>Собери свой комплект</h1>
@@ -394,7 +428,6 @@
                                                     <div class="further">
                                                         <p><a id="myBtnThree">Далее</a></p>
                                                     </div>
-
                                                     <div id="myModalThree" class="modal">
                                                         <div class="modal-content">
                                                             <h1>Собери свой комплект</h1>
@@ -423,7 +456,6 @@
                                                             <div class="further">
                                                                 <p><a id="myBtnFoo">Далее</a></p>
                                                             </div>
-
                                                             <div id="myModalFoo" class="modal">
                                                                 <div class="modal-content">
                                                                     <div class="col-9-5">
@@ -445,7 +477,7 @@
                                 <div class="col-9-1">
 
                                     <img src="img/catalog/priscilla-du-preez--R2uNyGmeM4-unsplash.png" alt="">
-                                    
+
                                 </div>
 
                                 <div class="further" style="padding-left: 3vw">
@@ -506,7 +538,7 @@
             </div>
         </div>
 
-        <div class="rectangle">
+        <div class="rectangle" id="contacts">
             <div class="glitch">
             <h1>liBell</h1>
             <h1>PosteliBell</h1>
@@ -535,7 +567,7 @@
                         <div class="contacts_mess_justify">
                             <a><img src="/img/logo/vk.svg" alt=""></a>
                             <a><img src="/img/logo/telegram.svg" alt=""></a>
-                            <a><img src="/img/logo/instagram.svg" alt=""></a>
+                            <a><img src="/img/logo/viber.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -545,45 +577,63 @@
     </main>
 
     <footer>
-        <div class="footer_flex">
-            <div class="col-7-1">
-                <div class="bar_info_one">
-                    <img src="img/logo/logowhite.png" alt="">
-                    <p>© Все права защищены</p>
-                    <p style="padding-top: 3vw">Политика конфеденциальности</p>
-                </div>
-            </div>
+        <div class="footer_bg">
+            <div class="footer_content">
 
-            <div class="col-7-2">
-                <div class="bar_info_two">
-                    <ul>
-                        <li><a href="#" class="bar_info">Главная</a></li>
-                        <li><a href="#" class="bar_info">О нас</a></li>
-                        <li><a href="#" class="bar_info">Доставка и оплата</a></li>
-                        <li><a href="#" class="bar_info">Каталог</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-7-3">
-                <div class="bar_info_three">
-                    <p>Контакты</p>
-                    <p>+ 7 (999) 999-99-99</p>
-                    <p>г. Оренбург, ул. 60 лет Октября, д. 76</p>
-                    <p>Postelibel@gmail.com</p>
-                    <div class="contacts_mess">
-                        <div class="contacts_footer_img">
-                            <a><img src="/img/logo/vkwhite.png" alt=""></a>
-                            <a><img src="/img/logo/telegramwhite.png" alt=""></a>
-                            <a><img src="/img/logo/instagramwhite.png" alt=""></a>
+                <div class="footer_content_all">
+                    <div class="foo-1-3 pad_bot">
+                        <img src="../../../img/logo/logowhite.png" alt="">
+                        <p>© Все права защищены</p>
+                        <h1>Политика конфеденциальности</h1>
+                    </div>
+                    <div class="foo-2-3 pad_bot">
+                        <p><a href="../../home.html">Главная</a></p>
+                        <p><a href="../../home.html">О нас</a></p>
+                        <p><a href="../../home.html">Доставка и оплата</a></p>
+                        <p><a href="../../home.html">Каталог</a></p>
+                    </div>
+                    <div class="foo-3-3 pad_bot">
+                        <p>Контакты</p>
+                        <p>+ 7 (999) 999-99-99</p>
+                        <p>г. Оренбург, ул. 60 лет Октября, д. 76</p>
+                        <p>Postelibel@gmail.com</p>
+                        <div class="img">
+                            <img src="../../img/logo/vkwhite.png" alt="">
+                            <img src="../../img/logo/telegramwhite.png" alt="">
+                            <img src="../../img/logo/viberwhite.png" alt="">
                         </div>
                     </div>
                 </div>
+
+                <div class="footer_content_all_one">
+                    <div class="foo-1-3 pad_bot">
+                        <img src="../../../img/logo/logowhite.png" alt="">
+                        <p>© Все права защищены</p>
+                        <h1>Политика конфеденциальности</h1>
+                    </div>
+                    <div class="foo-2-3 pad_bot">
+                        <p>Главная</p>
+                        <p>О нас</p>
+                        <p>Доставка и оплата</p>
+                        <p>Каталог</p>
+                    </div>
+                    <div class="foo-3-3 pad_bot">
+                        <p>Контакты</p>
+                        <p>+ 7 (999) 999-99-99</p>
+                        <p>г. Оренбург, ул. 60 лет Октября, д. 76</p>
+                        <p>Postelibel@gmail.com</p>
+                        <div class="img">
+                            <img src="../../../img/logo/vkwhite.png" alt="">
+                            <img src="../../../img/logo/telegramwhite.png" alt="">
+                            <img src="../../../img/logo/viberwhite.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
     </footer>
 
-<script src="menu.js"></script>
+<script src="sait/js/menu.js"></script>
 </body>
 </html>

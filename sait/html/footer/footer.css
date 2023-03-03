@@ -1,0 +1,166 @@
+footer {
+    background: #3D3C3C;
+}
+
+.footer_bg {
+    padding: 7vw;
+}
+
+.footer_content_all {
+    display: flex;
+}
+
+.pad_bot {
+    padding-bottom: 3em;
+}
+
+.foo-1-3 {
+    color: #f1efec;
+    width: 250px;
+    display: inline;
+    float: left;
+}
+
+.foo-1-3 img {
+    width: 40px;
+}
+
+.foo-1-3 p {
+    font-size: 20px;
+}
+
+.foo-1-3 h1 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 3em;
+}
+
+.foo-2-3 {
+    color: #f1efec;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.foo-2-3 p {
+    padding-top: 1em;
+}
+
+.foo-3-3 {
+    color: #f1efec;
+    width: 280px;
+    display: inline;
+    float: left;
+}
+
+.foo-3-3 p {
+    padding-top: 0.7em;
+}
+
+.img img {
+    width: 20px;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+}
+
+@media (min-width: 768px) {
+    .footer_content_all_one {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        height: 72vh;
+        background: #3D3C3C;
+    }
+
+    .footer_bg {
+        padding: 7vw;
+    }
+
+    .footer_content_all {
+        display: none;
+    }
+
+    .footer_content_all_one {
+
+    }
+
+    .pad_bot {
+        padding-bottom: 3em;
+    }
+
+    .foo-1-3 {
+        color: #f1efec;
+        width: 250px;
+        display: inline;
+        float: left;
+    }
+
+    .foo-1-3 img {
+        width: 40px;
+    }
+
+    .foo-1-3 p {
+        font-size: 20px;
+    }
+
+    .foo-1-3 h1 {
+        font-size: 15px;
+        font-weight: normal;
+        margin-top: 3em;
+    }
+
+    .foo-2-3 {
+        color: #f1efec;
+        width: 250px;
+        margin-right: auto;
+        display: inline;
+        float: left;
+    }
+
+    .foo-2-3 p {
+        padding-top: 1em;
+    }
+
+    .foo-3-3 {
+        color: #f1efec;
+        width: 280px;
+        display: inline;
+        float: left;
+    }
+
+    .foo-3-3 p {
+        padding-top: 0.7em;
+    }
+
+    .img img {
+        width: 20px;
+        padding-top: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .footer_content_all_one .foo-1-3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer_content_all_one .foo-2-3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer_content_all_one .foo-3-3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.foo-2-3 p a {
+    color: #f1efec;
+}
+
+
+
+

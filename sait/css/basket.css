@@ -1,8 +1,8 @@
 /* Webfont: Mak-Bold */@font-face {
     font-family: 'Mak';
-    src: url('fonts/Web/MAK-bold.eot'); /* IE9 Compat Modes */
-    src: url('fonts/Web/MAK-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/Web/MAK-bold.woff') format('woff'), /* Modern Browsers */
+    src: url('../../fonts/Web/MAK-bold.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Web/MAK-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../fonts/Web/MAK-bold.woff') format('woff'), /* Modern Browsers */
     url('fonts/Web/MAK-bold.ttf') format('truetype'); /* Safari, Android, iOS */
     font-style: normal;
     font-weight: bold;
@@ -11,9 +11,9 @@
 
 /* Webfont: Mak-Light */@font-face {
     font-family: 'MakLight';
-    src: url('fonts/Web/MAK.eot'); /* IE9 Compat Modes */
-    src: url('fonts/Web/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/Web/MAK.woff') format('woff'), /* Modern Browsers */
+    src: url('../../fonts/Web/MAK.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Web/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../fonts/Web/MAK.woff') format('woff'), /* Modern Browsers */
     url('fonts/Web/MAK.ttf') format('truetype'); /* Safari, Android, iOS */
     font-style: normal;
     font-weight: normal;
@@ -89,7 +89,7 @@ hr {
     padding-bottom: 1.5vw;
 }
 
-.img img {
+.img_wost img {
     width: 13.021vw;
 }
 
@@ -128,7 +128,7 @@ hr {
     font-family: Montserrat;
     font-weight: normal;
     font-size: 1vw;
-    padding-top: 0.3vw;
+    padding-top: 0.55vw;
 }
 
 .info_text_left p {
@@ -138,6 +138,7 @@ hr {
     color: #3D3C3C;
     padding-left: 1vw;
     padding-top: 0.5vw;
+    font-size: 1vw;
 }
 
 .praise {
@@ -147,6 +148,10 @@ hr {
 .all {
     display: flex;
     margin: auto;
+}
+
+.all h2 {
+    font-size: 1vw;
 }
 
 .all img {
@@ -178,15 +183,15 @@ hr {
 
 .modal {
     padding-top: 1.5vw;
+
 }
 
-.modal-design {
-
-    margin: auto;
-    width: 39.427vw;
-    height: 65vw;
-    background: #f1efec;
+.center_one {
+    display: flex;
+    justify-content: center;
 }
+
+
 
 
 

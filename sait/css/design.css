@@ -1,8 +1,8 @@
 /* Webfont: Mak-Bold */@font-face {
     font-family: 'Mak';
-    src: url('fonts/Web/MAK-bold.eot'); /* IE9 Compat Modes */
-    src: url('fonts/Web/MAK-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/Web/MAK-bold.woff') format('woff'), /* Modern Browsers */
+    src: url('../../fonts/Web/MAK-bold.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Web/MAK-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../fonts/Web/MAK-bold.woff') format('woff'), /* Modern Browsers */
     url('fonts/Web/MAK-bold.ttf') format('truetype'); /* Safari, Android, iOS */
     font-style: normal;
     font-weight: bold;
@@ -11,9 +11,9 @@
 
 /* Webfont: Mak-Light */@font-face {
     font-family: 'MakLight';
-    src: url('fonts/Web/MAK.eot'); /* IE9 Compat Modes */
-    src: url('fonts/Web/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('fonts/Web/MAK.woff') format('woff'), /* Modern Browsers */
+    src: url('../../fonts/Web/MAK.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/Web/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../fonts/Web/MAK.woff') format('woff'), /* Modern Browsers */
     url('fonts/Web/MAK.ttf') format('truetype'); /* Safari, Android, iOS */
     font-style: normal;
     font-weight: normal;
@@ -22,10 +22,11 @@
 
 .content_design {
     padding-top: 2vw;
+    padding-bottom: 1vw;
     background: white;
     border: 1px solid black;
-    position: fixed;
     width: 420px;
+    margin-bottom: 2vw;
 }
 
 .all_info_modal {
@@ -132,9 +133,7 @@ div p {
     padding: 5px 15px 5px 15px;
     border: 1px solid black;
     float: right;
-    margin-bottom: 30px;
     margin-top: 20px;
 }
-
 
 

@@ -7,11 +7,11 @@ btnDesign.onclick = function () {
 }
 
 spanDesign.onclick = function () {
-    modal.style.display = "none";
+    modalDesign.style.display = "none";
 }
 
 window.onclick = function (event) {
     if (event.target == modalDesign) {
-        modal.style.display = "none";
+        modalDesign.style.display = "none";
     }
 }
