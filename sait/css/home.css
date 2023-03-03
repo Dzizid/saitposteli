@@ -403,6 +403,81 @@ p>input {
     padding-top: 5.188vw;
 }
 
+@media (max-width: 767px) {
+    .delivery {
+        padding-top: 9.323vw;
+        padding-left: 7.656vw;
+    }
+
+    .delivery_menu {
+        width: 84.531vw;
+        height: 50.156vw;
+    }
+
+    .flex_delivery {
+        display: flex;
+    }
+
+    .content_delivery_menu h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 3.333vw;
+        font-family: "Mak Light";
+        margin: 0;
+        font-weight: normal;
+    }
+
+    .col-5-1 {
+        width: 100%;
+    }
+
+    .line {
+        border-bottom: 1px solid black; /* Параметры линии */
+        margin-top: 3.646vw;
+        padding-top: 5.833vw;
+    }
+
+    .line_one {
+        padding-top: 0;
+    }
+
+    .flex_content_delivery {
+        display: flex;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right h2 {
+        margin-left: 12vw;
+        margin-right: 2vw;
+    }
+
+    .left h2 {
+        margin-right: 9.5vw;
+    }
+
+    .flex_content_delivery h2 {
+        font-family: Mak;
+        font-size: 3.333vw;
+    }
+
+    .flex_content_delivery p {
+        font-family: Montserrat;
+        font-size: 2.2vw;
+        padding-top: 0.9vw;
+    }
+
+    .col-5-2 {
+        display: none;
+    }
+}
+
 /* Повторение PosteliBell */
 
 .rectangle {
@@ -706,7 +781,7 @@ p>input {
 
     .catalog_element {
         margin-right: 8.888vw;
-        width: 39%;
+        width: 25%;
         height: 30.896vw;
     }
 
@@ -716,6 +791,7 @@ p>input {
 
     .catalog_element_one {
         padding-top: 4.219vw;
+        padding-left: 8vw;
     }
 
     .info_element {

@@ -208,9 +208,134 @@ form {
     font-size: 0.9vw;
 }
 
+/* Карточка мобилки */
 
+@media (min-width: 768px) {
+    .card_mobile {
+        display: none;
+    }
+}
 
+@media (max-width: 767px) {
+    .card {
+        display: none;
+    }
 
+    .mobile_name {
 
+    }
+
+    .card_mobile_wi {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        font-family: "Mak Light";
+        font-weight: normal;
+        padding-bottom: 0.3em;
+    }
+
+    .mobile_name img {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .shop_basket {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 3vw;
+    }
+
+    .shop_basket_h {
+        float: left;
+    }
+
+    .basket_h h3 {
+        border: 1px solid black;
+        padding: 0.5em 1.5em 0.5em 1.5em;
+    }
+
+    .many {
+        display: flex;
+        float: right;
+    }
+
+    .many h4 {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 1em;
+        font-family: Montserrat;
+        font-weight: normal;
+
+        font-size: 5vw;
+    }
+
+    .many p {
+        margin-top: auto;
+        margin-bottom: auto;
+
+        font-family: "Mak Light";
+        font-size: 5vw;
+    }
+
+    .var_pos {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+
+    .info_mobile {
+        font-family: "Mak Light";
+        font-size: 5vw;
+        margin-top: 0.6em;
+        margin-bottom: 0.3em;
+    }
+
+    .form_select_mobile {
+
+    }
+
+    .select_mobile {
+        border: 1px solid black;
+        padding: 0.7em;
+    }
+
+    .hr_mobile {
+        border: none; /* Убираем границу */
+        background-color: black; /* Цвет линии */
+        color: black; /* Цвет линии для IE6-7 */
+        height: 2px; /* Толщина линии */
+        width: 100%;
+    }
+
+    #info_har {
+        display: none;
+    }
+
+    #info_har_opis {
+        display: none;
+    }
+
+    .info_menu_mobile {
+        display: flex;
+        padding-bottom: 1em;
+    }
+
+    .info_right_mobile {
+        padding-left: 10vw;
+    }
+
+    .info_text_mobile p {
+        padding-bottom: 0.5em;
+    }
+
+    .component_3_1 {
+        padding-left: 13vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+}
 
 

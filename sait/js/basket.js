@@ -15,3 +15,7 @@ window.onclick = function (event) {
         modalDesign.style.display = "none";
     }
 }
+
+function viedInfoClient() {
+    document.getElementById("myClient").style.display = "block";
+}

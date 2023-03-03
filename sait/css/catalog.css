@@ -58,3 +58,25 @@ h2 {
     font-size: 1.5vw;
     padding-top: 1vw;
 }
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 4vw;
+    }
+
+    .menu_hits div h1 {
+        font-size: 6vw;
+    }
+
+    .select_mobile {
+        font-size: 0.7em;
+    }
+
+    .select_mess {
+        font-size: 1.5vw;
+    }
+
+    .form_select_one {
+
+    }
+}
