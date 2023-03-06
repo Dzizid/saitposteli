@@ -18,15 +18,15 @@
 
     <div class="container">
         <div class="col-1-3">
-            <a href="../../home.html"><img class="logo_width" src="../../img/logo/logoblack.png"></a>
+            <a href="../../home.php"><img class="logo_width" src="../../img/logo/logoblack.png"></a>
         </div>
         <div class="col-2-3">
             <ul>
-                <li style="padding-left: 1vw"><a href="../../home.html">HIT`S</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="../../home.html">О нас</a></li>
-                <li><a href="../../home.html">Доставка и оплата</a></li>
-                <li><a href="../../home.html">Контакты</a></li>
+                <li style="padding-left: 1vw"><a href="../../home.php">HIT`S</a></li>
+                <li><a href="catalog.php">Каталог</a></li>
+                <li><a href="../../home.php">О нас</a></li>
+                <li><a href="../../home.php">Доставка и оплата</a></li>
+                <li><a href="../../home.php">Контакты</a></li>
             </ul>
         </div>
         <div class="col-3-3">
@@ -43,7 +43,7 @@
     <div class="mobile" id="mobile">
         <div class="container_mobile" id="container_mobile">
             <div class="mob-1-3">
-                <a href="../../home.html"><img class="logo" src="../../img/logo/logoblack.png" alt=""></a>
+                <a href="../../home.php"><img class="logo" src="../../img/logo/logoblack.png" alt=""></a>
             </div>
             <img src="../../img/logo/bars-solid.svg" onmousedown="viewDiv()">
             <div class="mob-2-3">
@@ -542,10 +542,10 @@
                     <h1>Политика конфеденциальности</h1>
                 </div>
                 <div class="foo-2-3 pad_bot">
-                    <p><a href="../../home.html">Главная</a></p>
-                    <p><a href="../../home.html">О нас</a></p>
-                    <p><a href="../../home.html">Доставка и оплата</a></p>
-                    <p><a href="../../home.html">Каталог</a></p>
+                    <p><a href="../../home.php">Главная</a></p>
+                    <p><a href="../../home.php">О нас</a></p>
+                    <p><a href="../../home.php">Доставка и оплата</a></p>
+                    <p><a href="../../home.php">Каталог</a></p>
                 </div>
                 <div class="foo-3-3 pad_bot">
                     <p>Контакты</p>

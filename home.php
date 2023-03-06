@@ -1,3 +1,7 @@
+<?php
+    include 'php.php';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,7 +25,7 @@
             <div class="col-2-3">
                 <ul>
                     <li style="padding-left: 1vw"><a href="#HIT`S">HIT`S</a></li>
-                    <li><a href="sait/html/catalog.html">Каталог</a></li>
+                    <li><a href="sait/html/catalog.php">Каталог</a></li>
                     <li><a href="#about_us">О нас</a></li>
                     <li><a href="#delivery">Доставка и оплата</a></li>
                     <li><a href="#contacts">Контакты</a></li>
@@ -30,7 +34,7 @@
             <div class="col-3-3">
                 <div class="position_left">
                 <img class="fish_menu" src="img/logo/heart-regular.svg">
-                <p class="fish"><a href="sait/html/basket.html">BAG</a></p>
+                <p class="fish"><a href="sait/html/basket.php">BAG</a></p>
                 <img class="fish_menu" src="img/logo/circle-solid.svg">
                 <img class="fish_menu" src="img/logo/magnifying-glass-solid.svg">
                 <p class="fish"><input type="search" name="q" placeholder=""></p>
@@ -45,7 +49,7 @@
                 </div>
                 <img src="img/logo/bars-solid.svg" onmousedown="viewDiv()">
                 <div class="mob-2-3">
-                    <h2><a href="sait/html/basket.html">BAG</a></h2>
+                    <h2><a href="sait/html/basket.php">BAG</a></h2>
                     <img class="logo_width" src="img/logo/circle-solid.svg" alt="">
                     <img class="logo_width" src="img/logo/heart-regular.svg" alt="">
                 </div>
@@ -89,7 +93,7 @@
                 </div>
                 <div class="content_center">
                     <h1>PosteliBell</h1>
-                    <p><a href="sait/html/catalog.html"  >Перейти в каталог</a></p>
+                    <p><a href="sait/html/catalog.php"  >Перейти в каталог</a></p>
                     <p class="natural">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnatural <br> 100% materials </p>
                     
                     <div class="logo_mess">
@@ -139,10 +143,10 @@
                             <div class="info_element">
                                 <div class="info_element_left_bar">
                                     <h2>Grey</h2>
-                                    <h3>8600 ₽</h3>
+                                    <h3><?php echo '8600' ?> ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.html">Подробнее</a></p>
+                                    <p><a href="sait/html/card.php">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -165,10 +169,10 @@
                             <div class="info_element">
                                 <div class="info_element_left_bar">
                                     <h2>Grey</h2>
-                                    <h3>8600 ₽</h3>
+                                    <h3><?php echo $towarprice ?> ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.html">Подробнее</a></p>
+                                    <p><a href="sait/html/card.php">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +197,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.html">Подробнее</a></p>
+                                    <p><a href="sait/html/card.php">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +222,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.html">Подробнее</a></p>
+                                    <p><a href="sait/html/card.php">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +247,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.html">Подробнее</a></p>
+                                    <p><a href="sait/html/card.php">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +272,7 @@
                                     <h3>8600 ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.html">Подробнее</a></p>
+                                    <p><a href="sait/html/card.php">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
@@ -400,7 +404,7 @@
                         <p><a href="home.html">Главная</a></p>
                         <p><a href="#about_us">О нас</a></p>
                         <p><a href="#delivery">Доставка и оплата</a></p>
-                        <p><a href="/sait/html/catalog.html">Каталог</a></p>
+                        <p><a href="/sait/html/catalog.php">Каталог</a></p>
                     </div>
                     <div class="foo-3-3 pad_bot">
                         <p>Контакты</p>
@@ -443,7 +447,6 @@
             </div>
         </div>
     </footer>
-
 <script src="sait/js/menu.js"></script>
 </body>
 </html>

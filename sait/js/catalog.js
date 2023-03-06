@@ -1,7 +1,7 @@
 window.onload = function () {
     var box = document.getElementsByClassName('box');
     var btn = document.getElementById('button');
-    for (let i = 9  ;i<box.length;i++) {
+    for (let i = 9 ;i<box.length;i++) {
         box[i].style.display = "none";
     }
 

@@ -17,7 +17,7 @@
 
     <div class="container">
         <div class="col-1-3">
-            <a href="../../home.html"><img class="logo_width" src="../../img/logo/logoblack.png"></a>
+            <a href="../../home.php"><img class="logo_width" src="../../img/logo/logoblack.png"></a>
         </div>
         <div class="col-2-3">
             <ul>
@@ -31,7 +31,7 @@
         <div class="col-3-3">
             <div class="position_left">
                 <img class="fish_menu" src="../../img/logo/heart-regular.svg">
-                <p class="fish"><a href="basket.html">BAG</a></p>
+                <p class="fish"><a href="basket.php">BAG</a></p>
                 <img class="fish_menu" src="../../img/logo/circle-solid.svg">
                 <img class="fish_menu" src="../../img/logo/magnifying-glass-solid.svg">
                 <p class="fish"><input type="search" name="q" placeholder=""></p>
@@ -42,11 +42,11 @@
     <div class="mobile" id="mobile">
         <div class="container_mobile" id="container_mobile">
             <div class="mob-1-3">
-                <a href="../../home.html"><img class="logo" src="../../img/logo/logoblack.png" alt=""></a>
+                <a href="../../home.php"><img class="logo" src="../../img/logo/logoblack.png" alt=""></a>
             </div>
             <img src="../../img/logo/bars-solid.svg" onmousedown="viewDiv()">
             <div class="mob-2-3">
-                <h2><a href="basket.html">BAG</a></h2>
+                <h2><a href="basket.php">BAG</a></h2>
                 <img class="logo_width" src="../../img/logo/circle-solid.svg" alt="">
                 <img class="logo_width" src="../../img/logo/heart-regular.svg" alt="">
             </div>
@@ -157,7 +157,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -208,7 +208,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -233,7 +233,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -283,7 +283,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -308,7 +308,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -334,7 +334,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -359,7 +359,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -384,7 +384,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -409,7 +409,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -434,7 +434,7 @@
                                 <h3>8600 ₽</h3>
                             </div>
                             <div class="info_element_right_bar">
-                                <p><a href="card.html">Подробнее</a></p>
+                                <p><a href="card.php">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
@@ -489,10 +489,10 @@
                     <h1>Политика конфеденциальности</h1>
                 </div>
                 <div class="foo-2-3 pad_bot">
-                    <p><a href="../../home.html">Главная</a></p>
-                    <p><a href="../../home.html">О нас</a></p>
-                    <p><a href="../../home.html">Доставка и оплата</a></p>
-                    <p><a href="../../home.html">Каталог</a></p>
+                    <p><a href="../../home.php">Главная</a></p>
+                    <p><a href="../../home.php">О нас</a></p>
+                    <p><a href="../../home.php">Доставка и оплата</a></p>
+                    <p><a href="../../home.php">Каталог</a></p>
                 </div>
                 <div class="foo-3-3 pad_bot">
                     <p>Контакты</p>
