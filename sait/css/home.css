@@ -1,23 +1,19 @@
-/* Webfont: Mak-Bold */@font-face {
+@font-face {
     font-family: 'Mak';
-    src: url('../../fonts/Web/MAK-bold.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Web/MAK-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../fonts/Web/MAK-bold.woff') format('woff'), /* Modern Browsers */
-    url('fonts/Web/MAK-bold.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-style: normal;
+    src: url('subset-Mak-Bold.woff2') format('woff2'),
+    url('subset-Mak-Bold.woff') format('woff');
     font-weight: bold;
-    text-rendering: optimizeLegibility;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* Webfont: Mak-Light */@font-face {
-    font-family: 'MakLight';
-    src: url('../../fonts/Web/MAK.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Web/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../fonts/Web/MAK.woff') format('woff'), /* Modern Browsers */
-    url('fonts/Web/MAK.ttf') format('truetype'); /* Safari, Android, iOS */
+@font-face {
+    font-family: 'Mak';
+    src: url('subset-Mak-Light.woff2') format('woff2'),
+    url('subset-Mak-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 * {
@@ -146,7 +142,7 @@ p>input {
 }
 
 .content_center h1 {
-    font-family: Mak Light;
+    font-family: Mak;
     font-weight: normal;
     font-size: 12.21vw;
     margin: 7.500vw 0 0 0;
@@ -172,18 +168,18 @@ p>input {
 }
 
 .content_right p {
-    font-family: "Mak Light";
+    font-family: Mak;
     font-size: 1vw;
     margin: 0 0 0 0;
 }
 
 .content_center .natural {
-    font-family: "Mak Light";
+    font-family: Mak;
     transform: rotate(90deg);
     position: absolute;
-    margin: 2vw 0 0 12.8vw;
+    margin: 2vw 0 0 13.8vw;
     padding: 0 0 0 0;
-    font-family: "Mak Light";
+    font-family: Mak;
     font-size: 1vw;
 }
 
@@ -224,7 +220,7 @@ p>input {
     text-align: center;
     padding-top: 2.5vw;
     font-size: 3.333vw;
-    font-family: "Mak Light";
+    font-family: Mak;
     margin-bottom: 1vw;
     font-weight: normal;
 }
@@ -239,10 +235,30 @@ p>input {
 }
 
 .decor_abs {
-    width: 12.604vw;
     position: relative;
-    padding-left: 69.042vw;
-    top: 10.2vw
+    top: 10.2vw;
+    margin-left: 69vw;
+}
+
+img.decor_abs {
+    animation: 15s linear 0s normal none infinite running rot;
+    -webkit-animation: 15s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -264,7 +280,7 @@ p>input {
 }
 
 .menu_text_construct h3 {
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: normal;
     color: #f1efec;
     font-size: 3.333vw;
@@ -320,7 +336,7 @@ p>input {
     display: flex;
     justify-content: center;
     font-size: 3.333vw;
-    font-family: "Mak Light";
+    font-family: Mak;
     margin: 0;
     font-weight: normal;
 }
@@ -422,7 +438,7 @@ p>input {
         display: flex;
         justify-content: center;
         font-size: 3.333vw;
-        font-family: "Mak Light";
+        font-family: Mak;
         margin: 0;
         font-weight: normal;
     }
@@ -491,7 +507,7 @@ p>input {
 }
 
 .glitch h1 {
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: normal;
     color: #f1efec;
     margin: 0 4.167vw 0 0;
@@ -516,7 +532,7 @@ p>input {
 }
 
 .contacts_menu_flex h1 {
-    font-family: "Mak Light";
+    font-family: Mak;
     font-size: 3.333vw;
     font-weight: normal;
 }
@@ -568,7 +584,7 @@ p>input {
 @media (max-width: 767px) {
     .contacts {
         padding-top: 4.542vw;
-//        background: red;
+    //        background: red;
 
 
         margin-left: auto;
@@ -577,12 +593,12 @@ p>input {
     }
 
     .contacts_menu {
-//        width: 24.375vw;
-//        height: 28.229vw;
+    //        width: 24.375vw;
+    //        height: 28.229vw;
     }
 
     .contacts_menu_flex h1 {
-        font-family: "Mak Light";
+        font-family: Mak;
         font-size: 5vw;
         font-weight: normal;
     }
@@ -655,7 +671,7 @@ p>input {
 }
 
 .menu_hits h1 {
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: normal;
     font-size: 3.333vw;
     text-align: center;
@@ -696,15 +712,15 @@ p>input {
 
 .info_element_left_bar h2 {
     font-size: 1.471vw;
-    font-family: "Mak Light";
-    font-weight: normal;
+    font-family: Mak;
     margin-bottom: 0.6vw;
-
+    margin-top: 1vw;
+    padding: 0;
 }
 
 .info_element_left_bar h3 {
     font-size: 1.471vw;
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 0;
@@ -767,7 +783,7 @@ p>input {
     }
 
     .menu_hits h1 {
-        font-family: "Mak Light";
+        font-family: Mak;
         font-weight: normal;
         font-size: 3.333vw;
         text-align: center;
@@ -808,15 +824,14 @@ p>input {
 
     .info_element_left_bar h2 {
         font-size: 2.471vw;
-        font-family: "Mak Light";
-        font-weight: normal;
+        font-family: Mak;
         margin-bottom: 0.6vw;
         margin-top: 1vw;
     }
 
     .info_element_left_bar h3 {
         font-size: 2vw;
-        font-family: "Mak Light";
+        font-family: Mak;
         font-weight: normal;
         margin-bottom: 0;
         margin-top: 0;
@@ -896,7 +911,7 @@ p>input {
 
 .modal-content h1 {
     position: absolute;
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: normal;
     font-size: 5.8vw;
     padding-top: 2.583vw;
@@ -914,18 +929,18 @@ p>input {
 .col-9-1 {
     width: 40%;
     height: 100%;
-/*    background: rgba(231, 107, 107, 0.18); */
+    /*    background: rgba(231, 107, 107, 0.18); */
 }
 
 .col-9-2 {
     width: 64%;
     height: 100%;
-/*    background: rgba(190, 231, 107, 0.18); */
+    /*    background: rgba(190, 231, 107, 0.18); */
 }
 
 .col-9-2 h2 {
     padding-left: 3vw;
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: normal;
     font-size: 1.8vw;
     padding-top: 13vw;
@@ -964,7 +979,7 @@ p>input {
 }
 
 .col-9-2-1 {
-/*  background: rgba(107, 113, 231, 0.18); */
+    /*  background: rgba(107, 113, 231, 0.18); */
     display: flex;
 }
 
@@ -977,7 +992,7 @@ p>input {
 }
 
 .col-9-2-2 {
-/*    background: rgba(107, 113, 231, 0.18); */
+    /*    background: rgba(107, 113, 231, 0.18); */
     display: flex;
 }
 
@@ -1181,8 +1196,3 @@ p>input {
     width: 5%;
     padding-left: 6%;
 }
-
-
-
-
-

@@ -1,23 +1,19 @@
-/* Webfont: Mak-Bold */@font-face {
+@font-face {
     font-family: 'Mak';
-    src: url('../../fonts/Web/MAK-bold.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Web/MAK-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../fonts/Web/MAK-bold.woff') format('woff'), /* Modern Browsers */
-    url('fonts/Web/MAK-bold.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-style: normal;
+    src: url('subset-Mak-Bold.woff2') format('woff2'),
+    url('subset-Mak-Bold.woff') format('woff');
     font-weight: bold;
-    text-rendering: optimizeLegibility;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* Webfont: Mak-Light */@font-face {
-    font-family: 'MakLight';
-    src: url('../../fonts/Web/MAK.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Web/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../fonts/Web/MAK.woff') format('woff'), /* Modern Browsers */
-    url('fonts/Web/MAK.ttf') format('truetype'); /* Safari, Android, iOS */
+@font-face {
+    font-family: 'Mak';
+    src: url('subset-Mak-Light.woff2') format('woff2'),
+    url('subset-Mak-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 main {
@@ -49,7 +45,7 @@ main {
 
 .container_basket_product h3 {
     text-align: center;
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: normal;
     font-size: 1.3vw;
 }
@@ -108,7 +104,7 @@ hr {
 }
 
 .menu_one_top h4 {
-    font-family: "Mak Light";
+    font-family: Mak;
     font-size: 1.2vw;
     padding-top: 1vw;
 }
@@ -176,7 +172,8 @@ hr {
 }
 
 .summ p {
-    font-family: "Mak Light";
+    font-family: Mak;
+    font-weight: bold;
     font-size: 2.5vw;
     text-align: end;
 }
@@ -226,7 +223,7 @@ hr {
 
     .number_basket h3 {
         font-size: 2em;
-        font-family: "Mak Light";
+        font-family: Mak;
         padding-right: 4vw;
         margin: auto;
     }
@@ -266,7 +263,7 @@ hr {
 
     .basket_click p {
         font-size: 1.2em;
-        font-family: "Mak Light";
+        font-family: Mak;
         padding-top: 0.2em;
         font-weight: bold;
     }
@@ -297,23 +294,3 @@ hr {
         padding-top: 10vw;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

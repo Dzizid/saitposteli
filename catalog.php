@@ -145,13 +145,7 @@ include 'сonnection.php';
             <div class="catalog_menu wrapper-boxes">
 
                 <?php
-
-
-
                     include "bd_towar.php";
-
-
-
                 ?>
 
             <div class="download_position">

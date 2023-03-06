@@ -1,23 +1,19 @@
-/* Webfont: Mak-Bold */@font-face {
+@font-face {
     font-family: 'Mak';
-    src: url('../../fonts/Web/MAK-bold.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Web/MAK-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../fonts/Web/MAK-bold.woff') format('woff'), /* Modern Browsers */
-    url('fonts/Web/MAK-bold.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-style: normal;
+    src: url('subset-Mak-Bold.woff2') format('woff2'),
+    url('subset-Mak-Bold.woff') format('woff');
     font-weight: bold;
-    text-rendering: optimizeLegibility;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* Webfont: Mak-Light */@font-face {
-    font-family: 'MakLight';
-    src: url('../../fonts/Web/MAK.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Web/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../fonts/Web/MAK.woff') format('woff'), /* Modern Browsers */
-    url('fonts/Web/MAK.ttf') format('truetype'); /* Safari, Android, iOS */
+@font-face {
+    font-family: 'Mak';
+    src: url('subset-Mak-Light.woff2') format('woff2'),
+    url('subset-Mak-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 .content_design {
@@ -40,7 +36,7 @@
 }
 
 .all_info_modal h1 {
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: normal;
     font-size: 35px;
     padding-bottom: 30px;
@@ -125,7 +121,7 @@ div p {
 }
 
 .summ_num {
-    font-family: "Mak Light";
+    font-family: Mak;
     padding-top: 30px;
 }
 
@@ -135,5 +131,3 @@ div p {
     float: right;
     margin-top: 20px;
 }
-
-

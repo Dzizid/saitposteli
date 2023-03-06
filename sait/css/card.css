@@ -1,23 +1,19 @@
-/* Webfont: Mak-Bold */@font-face {
+@font-face {
     font-family: 'Mak';
-    src: url('../../fonts/Web/MAK-bold.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Web/MAK-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../fonts/Web/MAK-bold.woff') format('woff'), /* Modern Browsers */
-    url('fonts/Web/MAK-bold.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-style: normal;
+    src: url('subset-Mak-Bold.woff2') format('woff2'),
+    url('subset-Mak-Bold.woff') format('woff');
     font-weight: bold;
-    text-rendering: optimizeLegibility;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* Webfont: Mak-Light */@font-face {
-    font-family: 'MakLight';
-    src: url('../../fonts/Web/MAK.eot'); /* IE9 Compat Modes */
-    src: url('../../fonts/Web/MAK.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../../fonts/Web/MAK.woff') format('woff'), /* Modern Browsers */
-    url('fonts/Web/MAK.ttf') format('truetype'); /* Safari, Android, iOS */
+@font-face {
+    font-family: 'Mak';
+    src: url('subset-Mak-Light.woff2') format('woff2'),
+    url('subset-Mak-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 /* Каталог меню */
@@ -104,15 +100,14 @@ select option {
 
 .info_card h1 {
     text-align: center;
-    font-family: "Mak Light";
-    font-weight: normal;
+    font-family: Mak;
     font-size: 2.2vw;
 }
 
 .info_card h2 {
     margin-top: 1.2vw;
-    font-family: "Mak Light";
-    font-weight: normal;
+    font-family: Mak;
+    font-weight: bold;
     font-size: 2vw;
 }
 
@@ -191,7 +186,7 @@ form {
 .price p {
     padding-left: 1vw;
     font-size: 2vw;
-    font-family: "Mak Light";
+    font-family: Mak;
     font-weight: bold;
 }
 
@@ -232,8 +227,8 @@ form {
 
     h1 {
         font-size: 1.5em;
-        font-family: "Mak Light";
-        font-weight: normal;
+        font-family: Mak;
+        font-weight: bold;
         padding-bottom: 0.3em;
     }
 
@@ -276,8 +271,8 @@ form {
     .many p {
         margin-top: auto;
         margin-bottom: auto;
-
-        font-family: "Mak Light";
+        font-weight: bold;
+        font-family: Mak;
         font-size: 5vw;
     }
 
@@ -287,7 +282,7 @@ form {
     }
 
     .info_mobile {
-        font-family: "Mak Light";
+        font-family: Mak;
         font-size: 5vw;
         margin-top: 0.6em;
         margin-bottom: 0.3em;
@@ -354,6 +349,10 @@ form {
         padding-left: 4.7vw;
     }
 
+    .info_element_left_bar h2 {
+        font-weight: bold;
+    }
+
     .component_3 h1 {
         font-size: 3vw;
         margin: 0;
@@ -363,9 +362,3 @@ form {
 }
 
 /* Вам может понравится побилка */
-
-
-
-
-
-
