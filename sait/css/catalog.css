@@ -48,7 +48,9 @@ select option {
 }
 
 .download_position {
+    padding-top: 5vw;
     padding-bottom: 5vw;
+    padding-left: 28.7vw;
 }
 
 h2 {

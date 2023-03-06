@@ -23,7 +23,7 @@
         <div class="col-2-3">
             <ul>
                 <li style="padding-left: 1vw"><a href="../../home.php">HIT`S</a></li>
-                <li><a href="catalog.php">Каталог</a></li>
+                <li><a href="../../catalog.php">Каталог</a></li>
                 <li><a href="../../home.php">О нас</a></li>
                 <li><a href="../../home.php">Доставка и оплата</a></li>
                 <li><a href="../../home.php">Контакты</a></li>

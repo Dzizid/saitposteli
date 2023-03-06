@@ -146,7 +146,7 @@ p>input {
 }
 
 .content_center h1 {
-    font-family: "Mak Light";
+    font-family: Mak Light;
     font-weight: normal;
     font-size: 12.21vw;
     margin: 7.500vw 0 0 0;
@@ -699,7 +699,7 @@ p>input {
     font-family: "Mak Light";
     font-weight: normal;
     margin-bottom: 0.6vw;
-    margin-top: 1vw;
+
 }
 
 .info_element_left_bar h3 {
@@ -760,7 +760,6 @@ p>input {
 @media (max-width: 767px) {
     .content_hits {
         padding-left: 13.229vw;
-        padding-top: 10.313vw;
     }
 
     .menu_hits {
@@ -780,18 +779,17 @@ p>input {
     }
 
     .catalog_element {
-        margin-right: 8.888vw;
-        width: 25%;
-        height: 30.896vw;
+        margin-right: 1.5vw;
+        width: 39%;
+        height: 45.896vw;
     }
 
     .catalog_element img {
-        width: 18.75vw;
+        width: 28.75vw;
     }
 
     .catalog_element_one {
-        padding-top: 4.219vw;
-        padding-left: 8vw;
+        padding-left: 4.7vw;
     }
 
     .info_element {
@@ -804,12 +802,12 @@ p>input {
     .info_element p {
         padding: 0;
         margin: 0;
-        font-size: 0.729vw;
+        font-size: 1.729vw;
         font-family: Montserrat;
     }
 
     .info_element_left_bar h2 {
-        font-size: 1.471vw;
+        font-size: 2.471vw;
         font-family: "Mak Light";
         font-weight: normal;
         margin-bottom: 0.6vw;
@@ -817,7 +815,7 @@ p>input {
     }
 
     .info_element_left_bar h3 {
-        font-size: 1.471vw;
+        font-size: 2vw;
         font-family: "Mak Light";
         font-weight: normal;
         margin-bottom: 0;
@@ -841,7 +839,7 @@ p>input {
 
     .info_element_right_bar p {
         margin-top: 2.5vw;
-        font-size: 0.729vw;
+        font-size: 1.729vw;
     }
 
     .info_element_right_bar {
@@ -868,7 +866,7 @@ p>input {
         text-align: center;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 115%;
+        width: 100%;
     }
 }
 
@@ -1141,13 +1139,17 @@ p>input {
     width: 20%;
 }
 
-.menu_bar {
+.menu_bar a {
     color: white;
 }
 
 .container_bar {
     padding-top: 5vw;
     padding-left: 10vw;
+}
+
+.container_bar p {
+    color: white;
 }
 
 .menu_bar p {

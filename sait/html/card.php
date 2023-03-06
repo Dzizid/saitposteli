@@ -23,7 +23,7 @@
         <div class="col-2-3">
             <ul>
                 <li style="padding-left: 1vw"><a href="#HIT`S">HIT`S</a></li>
-                <li><a href="catalog.php">Каталог</a></li>
+                <li><a href="../../catalog.php">Каталог</a></li>
                 <li><a href="#about_us">О нас</a></li>
                 <li><a href="#delivery">Доставка и оплата</a></li>
                 <li><a href="#contacts">Контакты</a></li>
@@ -301,9 +301,9 @@
                         </div>
                     </div>
 
-                </div>
+            <!--    </div>
 
-               <!-- <div class="catalog_element_one catalog_element box">
+                    <div class="catalog_element_one catalog_element box">
                     <img src="../../img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
 
                     <div>
@@ -326,8 +326,7 @@
                         </div>
                     </div>
 
-                </div>
-                -->
+                </div> -->
 
             </div>
         </div>

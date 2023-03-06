@@ -332,10 +332,40 @@ form {
     }
 
     .component_3_1 {
-        padding-left: 13vw;
+        padding-left: 4vw;
         padding-top: 5vw;
         padding-bottom: 5vw;
     }
+
+    .component_3 h1 {
+        font-size: 2.135vw;
+        padding-left: 33vw;
+    }
+
+    .info_element {
+        width: 88%;
+    }
+
+    .info_element p {
+        padding-left: 3.736vw;
+    }
+
+    .info_element_left_bar {
+        padding-left: 4.7vw;
+    }
+
+    .component_3 h1 {
+        font-size: 3vw;
+        margin: 0;
+        padding-left: 29vw;
+        padding-bottom: 0;
+    }
 }
+
+/* Вам может понравится побилка */
+
+
+
+
 
 

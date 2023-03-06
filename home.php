@@ -1,5 +1,5 @@
 <?php
-    include 'php.php';
+    include 'сonnection.php';
 ?>
 
 <!doctype html>
@@ -20,12 +20,12 @@
 
         <div class="container">
             <div class="col-1-3">
-                <a href="home.html"><img class="logo_width" src="img/logo/logoblack.png"></a>
+                <a href="home.php"><img class="logo_width" src="img/logo/logoblack.png"></a>
             </div>
             <div class="col-2-3">
                 <ul>
                     <li style="padding-left: 1vw"><a href="#HIT`S">HIT`S</a></li>
-                    <li><a href="sait/html/catalog.php">Каталог</a></li>
+                    <li><a href="catalog.php">Каталог</a></li>
                     <li><a href="#about_us">О нас</a></li>
                     <li><a href="#delivery">Доставка и оплата</a></li>
                     <li><a href="#contacts">Контакты</a></li>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="content_center">
                     <h1>PosteliBell</h1>
-                    <p><a href="sait/html/catalog.php"  >Перейти в каталог</a></p>
+                    <p><a href="catalog.php"  >Перейти в каталог</a></p>
                     <p class="natural">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnatural <br> 100% materials </p>
                     
                     <div class="logo_mess">
@@ -128,158 +128,50 @@
                 <h1>HIT`S</h1>
 
                 <div class="catalog_menu wrapper-boxes">
-                    <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
+
+                    <?php
+
+                    $sql = "SELECT * FROM Towar";
+                    if ($result = $conn->query($sql)) {
+                        foreach ($result as $row) {
+
+                            $towarid = $row["id"];
+                            $towarname = $row["name"];
+                            $towarprice = $row["price"];
+                            $towartextile = $row["textile"];
+                            $towartype = $row["type"];
+                            $towarimg = $row["img"];
+
+                            echo '<div class="catalog_element_one catalog_element box">
+                        <img src="'. $towarimg = $row["img"] .'" alt="">
 
                         <div>
                             <div class="info_element">
                                 <div class="info_left">
-                                    <p class="info_left">Комплект белья</p>
+                                    <p class="info_left">'. $towartype = $row["type"] .'</p>
                                 </div>
                                 <div class="info_right">
-                                    <p>Ткань сатин</p>
+                                    <p>'. $towartextile = $row["textile"] .'</p>
                                 </div>
                             </div>
                             <div class="info_element">
                                 <div class="info_element_left_bar">
-                                    <h2>Grey</h2>
-                                    <h3><?php echo '8600' ?> ₽</h3>
+                                    <h2>'. $towarname = $row["name"] .'</h2>
+                                    <h3>'. $towarprice = $row["price"] .' ₽</h3>
                                 </div>
                                 <div class="info_element_right_bar">
                                     <p><a href="sait/html/card.php">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    ';
+                        }
+                    }
 
-                    <!-- Дублирование объекта -->
-                    <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/gaelle-marcel-DFt3T5r_4FE-unsplash%202.png" alt="">
+                    $conn->close();
 
-                        <div>
-                            <div class="info_element">
-                                <div class="info_left">
-                                    <p class="info_left">Комплект белья</p>
-                                </div>
-                                <div class="info_right">
-                                    <p>Ткань сатин</p>
-                                </div>
-                            </div>
-                            <div class="info_element">
-                                <div class="info_element_left_bar">
-                                    <h2>Grey</h2>
-                                    <h3><?php echo $towarprice ?> ₽</h3>
-                                </div>
-                                <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.php">Подробнее</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/pexels-vlada-karpovich-4050423%202.png" alt="">
-
-                        <div>
-                            <div class="info_element">
-                                <div class="info_left">
-                                    <p class="info_left">Комплект белья</p>
-                                </div>
-                                <div class="info_right">
-                                    <p>Ткань сатин</p>
-                                </div>
-                            </div>
-                            <div class="info_element">
-                                <div class="info_element_left_bar">
-                                    <h2>Grey</h2>
-                                    <h3>8600 ₽</h3>
-                                </div>
-                                <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.php">Подробнее</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/bright-and-clean-modern-bedroom-in-scandinavian-style%201.png" alt="">
-
-                        <div>
-                            <div class="info_element">
-                                <div class="info_left">
-                                    <p class="info_left">Комплект белья</p>
-                                </div>
-                                <div class="info_right">
-                                    <p>Ткань сатин</p>
-                                </div>
-                            </div>
-                            <div class="info_element">
-                                <div class="info_element_left_bar">
-                                    <h2>Grey</h2>
-                                    <h3>8600 ₽</h3>
-                                </div>
-                                <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.php">Подробнее</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/mia-moessinger-8PLkPBoI_TU-unsplash%202.png" alt="">
-
-                        <div>
-                            <div class="info_element">
-                                <div class="info_left">
-                                    <p class="info_left">Комплект белья</p>
-                                </div>
-                                <div class="info_right">
-                                    <p>Ткань сатин</p>
-                                </div>
-                            </div>
-                            <div class="info_element">
-                                <div class="info_element_left_bar">
-                                    <h2>Grey</h2>
-                                    <h3>8600 ₽</h3>
-                                </div>
-                                <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.php">Подробнее</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="catalog_element_one catalog_element box">
-                        <img src="img/catalog/svitlana-ASB-wPXJFGE-unsplash%201.png" alt="">
-
-                        <div>
-                            <div class="info_element">
-                                <div class="info_left">
-                                    <p class="info_left">Комплект белья</p>
-                                </div>
-                                <div class="info_right">
-                                    <p>Ткань сатин</p>
-                                </div>
-                            </div>
-                            <div class="info_element">
-                                <div class="info_element_left_bar">
-                                    <h2>Grey</h2>
-                                    <h3>8600 ₽</h3>
-                                </div>
-                                <div class="info_element_right_bar">
-                                    <p><a href="sait/html/card.php">Подробнее</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Окончание дублирования -->
-
+                    ?>
                 </div>
 
                 <div class="download_position">
@@ -404,7 +296,7 @@
                         <p><a href="home.html">Главная</a></p>
                         <p><a href="#about_us">О нас</a></p>
                         <p><a href="#delivery">Доставка и оплата</a></p>
-                        <p><a href="/sait/html/catalog.php">Каталог</a></p>
+                        <p><a href="/catalog.php">Каталог</a></p>
                     </div>
                     <div class="foo-3-3 pad_bot">
                         <p>Контакты</p>
