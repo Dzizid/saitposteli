@@ -29,7 +29,7 @@ echo '<div class="catalog_element_one catalog_element box">
                 <h3>'. $towarprice .' ₽</h3>
             </div>
             <div class="info_element_right_bar">
-                <p><a href="card.php?id='. $towarid .'">Подробнее</a></p>
+                <p><a href="cart.php?id='. $towarid .'">Подробнее</a></p>
             </div>
         </div>
     </div>
