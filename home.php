@@ -17,7 +17,6 @@
 
 
     <header class="container_max">
-
         <div class="container">
             <div class="col-1-3">
                 <a href="home.php"><img class="logo_width" src="img/logo/logoblack.png"></a>
@@ -34,7 +33,7 @@
             <div class="col-3-3">
                 <div class="position_left">
                 <img class="fish_menu" src="img/logo/heart-regular.svg">
-                <p class="fish"><a href="sait/html/basket.php">BAG</a></p>
+                <p class="fish"><a href="basket.php">BAG</a></p>
                 <img class="fish_menu" src="img/logo/circle-solid.svg">
                 <img class="fish_menu" src="img/logo/magnifying-glass-solid.svg">
                 <p class="fish"><input type="search" name="q" placeholder=""></p>
@@ -49,7 +48,7 @@
                 </div>
                 <img src="img/logo/bars-solid.svg" onmousedown="viewDiv()">
                 <div class="mob-2-3">
-                    <h2><a href="sait/html/basket.php">BAG</a></h2>
+                    <h2><a href="basket.php">BAG</a></h2>
                     <img class="logo_width" src="img/logo/circle-solid.svg" alt="">
                     <img class="logo_width" src="img/logo/heart-regular.svg" alt="">
                 </div>

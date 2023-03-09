@@ -12,31 +12,31 @@ $towartype = $row["type"];
 $towarimg = $row["img"];
 
 echo '<div class="catalog_element_one catalog_element box">
-    <img src="'. $towarimg = $row["img"] .'" alt="">
+    <img src="'. $towarimg .'" alt="">
 
     <div>
         <div class="info_element">
             <div class="info_left">
-                <p class="info_left">'. $towartype = $row["type"] .'</p>
+                <p class="info_left">'. $towartype .'</p>
             </div>
             <div class="info_right">
-                <p>'. $towartextile = $row["textile"] .'</p>
+                <p>'. $towartextile .'</p>
             </div>
         </div>
         <div class="info_element">
             <div class="info_element_left_bar">
-                <h2>'. $towarname = $row["name"] .'</h2>
-                <h3>'. $towarprice = $row["price"] .' ₽</h3>
+                <h2>'. $towarname .'</h2>
+                <h3>'. $towarprice .' ₽</h3>
             </div>
             <div class="info_element_right_bar">
-                <p><a href="sait/html/card.php">Подробнее</a></p>
+                <p><a href="card.php?id='. $towarid .'">Подробнее</a></p>
             </div>
         </div>
     </div>
 </div>
 ';
-}
-}
+    }
+        }
 
 $conn->close();
 

@@ -19,3 +19,4 @@ window.onclick = function (event) {
 function viedInfoClient() {
     document.getElementById("myClient").style.display = "block";
 }
+

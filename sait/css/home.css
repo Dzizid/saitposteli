@@ -235,15 +235,12 @@ p>input {
 }
 
 .decor_abs {
+    width: 12.604vw;
     position: relative;
-    top: 10.2vw;
-    margin-left: 69vw;
+    padding-left: 69.042vw;
+    top: 10.2vw
 }
 
-img.decor_abs {
-    animation: 15s linear 0s normal none infinite running rot;
-    -webkit-animation: 15s linear 0s normal none infinite running rot;
-}
 @keyframes rot {
     0% {
         transform: rotate(0deg);
@@ -713,6 +710,7 @@ img.decor_abs {
 .info_element_left_bar h2 {
     font-size: 1.471vw;
     font-family: Mak;
+    font-weight: bold;
     margin-bottom: 0.6vw;
     margin-top: 1vw;
     padding: 0;

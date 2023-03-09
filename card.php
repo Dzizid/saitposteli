@@ -5,11 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/card.css">
-    <link rel="stylesheet" href="footer/footer.css">
-    <link rel="script" href="../js/catalog.js">
-    <link rel="script" href="../js/card.js">
+    <link rel="stylesheet" href="sait/css/home.css">
+    <link rel="stylesheet" href="sait/css/card.css">
+    <link rel="stylesheet" href="sait/html/footer/footer.css">
+    <link rel="script" href="sait/js/catalog.js">
     <title>Card</title>
 </head>
 <body>
@@ -18,12 +17,12 @@
 
     <div class="container">
         <div class="col-1-3">
-            <a href="../../home.php"><img class="logo_width" src="../../img/logo/logoblack.png"></a>
+            <a href="home.php"><img class="logo_width" src="img/logo/logoblack.png"></a>
         </div>
         <div class="col-2-3">
             <ul>
                 <li style="padding-left: 1vw"><a href="#HIT`S">HIT`S</a></li>
-                <li><a href="../../catalog.php">Каталог</a></li>
+                <li><a href="catalog.php">Каталог</a></li>
                 <li><a href="#about_us">О нас</a></li>
                 <li><a href="#delivery">Доставка и оплата</a></li>
                 <li><a href="#contacts">Контакты</a></li>
@@ -31,10 +30,10 @@
         </div>
         <div class="col-3-3">
             <div class="position_left">
-                <img class="fish_menu" src="../../img/logo/heart-regular.svg">
+                <img class="fish_menu" src="img/logo/heart-regular.svg">
                 <p class="fish"><a href="basket.php">BAG</a></p>
-                <img class="fish_menu" src="../../img/logo/circle-solid.svg">
-                <img class="fish_menu" src="../../img/logo/magnifying-glass-solid.svg">
+                <img class="fish_menu" src="img/logo/circle-solid.svg">
+                <img class="fish_menu" src="img/logo/magnifying-glass-solid.svg">
                 <p class="fish"><input type="search" name="q" placeholder=""></p>
             </div>
         </div>
@@ -43,13 +42,13 @@
     <div class="mobile" id="mobile">
         <div class="container_mobile" id="container_mobile">
             <div class="mob-1-3">
-                <a href="../../home.php"><img class="logo" src="../../img/logo/logoblack.png" alt=""></a>
+                <a href="home.php"><img class="logo" src="img/logo/logoblack.png" alt=""></a>
             </div>
-            <img src="../../img/logo/bars-solid.svg" onmousedown="viewDiv()">
+            <img src="img/logo/bars-solid.svg" onmousedown="viewDiv()">
             <div class="mob-2-3">
                 <h2><a href="basket.php">BAG</a></h2>
-                <img class="logo_width" src="../../img/logo/circle-solid.svg" alt="">
-                <img class="logo_width" src="../../img/logo/heart-regular.svg" alt="">
+                <img class="logo_width" src="img/logo/circle-solid.svg" alt="">
+                <img class="logo_width" src="img/logo/heart-regular.svg" alt="">
             </div>
         </div>
     </div>
@@ -58,7 +57,7 @@
 <div id="menu_wrap">
     <div class="container_menu_mobile">
         <div class="logo_mobile">
-            <img class="logo_mobile_white" onmousedown="closeDiv()" src="../../img/logo/logowhite.png" alt="">
+            <img class="logo_mobile_white" onmousedown="closeDiv()" src="img/logo/logowhite.png" alt="">
         </div>
         <div class="menu_bar">
             <div class="container_bar">
@@ -89,17 +88,25 @@
         <!-- Главная -> Каталог -> Комплект белья Rain -->
     </div>
 
-    <div class="card">
+    <?php
+
+    require_once 'сonnection.php';
+    $productid = $_GET['id'];
+    $product = mysqli_query($conn, "SELECT * FROM `Towar` WHERE `id` = '$productid'");
+    $product = mysqli_fetch_assoc($product);
+    echo '
+        
+        <div class="card">
         <div class="all_card">
             <div class="top_card">
                 <div class="img_card">
-                    <img src="../../img/logo/jake-charles-LyALgKdcUVI-unsplash.png" alt="">
+                    <img src="'. $product['img'] .'" alt="">
                 </div>
 
                 <div class="info_card">
-                    <h1>Rain</h1>
+                    <h1>'. $product['name'] .'</h1>
                     <div>
-                    <h2>РАЗМЕРЫ</h2>
+                        <h2>РАЗМЕРЫ</h2>
                         <form class="form_select_one from_select" action="select1.php" method="post">
                             <select class="select" name="select">
                                 <option selected="selected">Двухспальное(евро)</option>
@@ -121,9 +128,9 @@
                             </div>
 
                             <div class="info_text_left">
-                                <p>130 г/м2</p>
-                                <p>Сатин</p>
-                                <p>На замке</p>
+                                <p>'. $product['density'] .'</p>
+                                <p>'. $product['textile'] .'</p>
+                                <p>'. $product['clasptype'] .'</p>
                             </div>
 
                             <div class="info info_right">
@@ -133,8 +140,8 @@
                             </div>
 
                             <div class="info_text_right">
-                                <p>190*220, 1шт</p>
-                                <p>180*215, 1шт</p>
+                                <p>'. $product['sheet'] .'</p>
+                                <p>'. $product['duvetcover'] .'</p>
                                 <p><form action="select1.php" method="post">
                                     <select class="select_od" name="" id="">
                                         <option value="">50*70, 2шт</option>
@@ -144,10 +151,10 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <h3>В корзину</h3>
+                            <a href="?card=add&id=' . $product['id'] . ' " data-id = "' . $product['id'] . '"><h3>В корзину</h3></a>
                             <div class="price">
-                            <h4>Цена:</h4>
-                            <p>7400 ₽</p>
+                                <h4>Цена:</h4>
+                                <p>'. $product['price'] .'</p>
                             </div>
                         </div>
                         <div class="description">
@@ -167,13 +174,15 @@
             </div>
         </div>
     </div>
-
+    
+    
+    <!-- мобилка -->
     <div class="card_mobile">
         <div class="card_mobile_wi">
             <div class="">
-                <h1>Rain</h1>
+                <h1>'. $product['name'] .'</h1>
                 <div class="mobile_name">
-                    <img src="../../img/logo/jake-charles-LyALgKdcUVI-unsplash.png" alt="">
+                    <img src="'. $product['img'] .'" alt="">
                 </div>
 
                 <div class="">
@@ -184,7 +193,7 @@
                         </div>
                         <div class="many">
                             <h4>Цена:</h4>
-                            <p>7400 ₽</p>
+                            <p>'. $product['price'] .' ₽</p>
                         </div>
                     </div>
 
@@ -208,18 +217,18 @@
                         <div class="info_menu_mobile" id="info_har">
                             <div class="info_left_mobile">
                                 <h3>Плотность</h3>
-                                <p>130 г/м2</p>
+                                <p>'. $product['density'] .'</p>
                                 <h3>Материал</h3>
-                                <p>Сатин</p>
+                                <p>'. $product['textile'] .'</p>
                                 <h3>Тип застежки</h3>
-                                <p>На замке</p>
+                                <p>'. $product['clasptype'] .'</p>
                             </div>
 
                             <div class="info_right_mobile">
                                 <h3>Простынь</h3>
-                                <p>190*220, 1шт</p>
+                                <p>'. $product['sheet'] .'</p>
                                 <h3>Пододеяльник</h3>
-                                <p>180*215, 1шт</p>
+                                <p>'. $product['duvetcover'] .'</p>
                                 <h3>Наволочка</h3>
                                 <form action="select1.php" method="post">
                                     <select class="" name="" id="">
@@ -248,13 +257,17 @@
             </div>
         </div>
     </div>
+    
+    '
+
+    ?>
 
     <div class="component_3_1">
         <div class="component_3">
             <h1>Вам может понравиться</h1>
             <div class="catalog_menu wrapper-boxes">
                 <div class="catalog_element_one catalog_element box">
-                    <img src="../../img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
+                    <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
 
                     <div>
                         <div class="info_element">
@@ -279,7 +292,7 @@
                 </div>
 
                 <div class="catalog_element_one catalog_element box">
-                    <img src="../../img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
+                    <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
 
                     <div>
                         <div class="info_element">
@@ -346,10 +359,10 @@
                     <h1>Политика конфеденциальности</h1>
                 </div>
                 <div class="foo-2-3 pad_bot">
-                    <p><a href="../../home.php">Главная</a></p>
-                    <p><a href="../../home.php">О нас</a></p>
-                    <p><a href="../../home.php">Доставка и оплата</a></p>
-                    <p><a href="../../home.php">Каталог</a></p>
+                    <p><a href="home.php">Главная</a></p>
+                    <p><a href="home.php">О нас</a></p>
+                    <p><a href="home.php">Доставка и оплата</a></p>
+                    <p><a href="home.php">Каталог</a></p>
                 </div>
                 <div class="foo-3-3 pad_bot">
                     <p>Контакты</p>
@@ -357,9 +370,9 @@
                     <p>г. Оренбург, ул. 60 лет Октября, д. 76</p>
                     <p>Postelibel@gmail.com</p>
                     <div class="img">
-                        <img src="../../img/logo/vkwhite.png" alt="">
-                        <img src="../../img/logo/telegramwhite.png" alt="">
-                        <img src="../../img/logo/viberwhite.png" alt="">
+                        <img src="img/logo/vkwhite.png" alt="">
+                        <img src="img/logo/telegramwhite.png" alt="">
+                        <img src="img/logo/viberwhite.png" alt="">
                     </div>
                 </div>
             </div>
@@ -393,8 +406,8 @@
     </div>
 </footer>
 
-<script src="../js/catalog.js"></script>
-<script src="../js/menu.js"></script>
-<script src="../js/card.js"></script>
+<script src="sait/js/catalog.js"></script>
+<script src="sait/js/menu.js"></script>
+<script src="sait/js/card.js"></script>
 </body>
 </html>
