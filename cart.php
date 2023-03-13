@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="sait/css/card.css">
     <link rel="stylesheet" href="sait/css/footer.css">
     <link rel="script" href="sait/js/catalog.js">
+
+    <script src="sait/js/jquery-ui.js"></script>
+    <script src="sait/js/jquery.js"></script>
+    <script src="sait/js/myCart.js"></script>
     <title>Card</title>
 </head>
 <body>
@@ -89,9 +93,7 @@
     </div>
 
     <?php
-
     include 'bd_cart.php';
-
     ?>
 
     <div class="component_3_1">
@@ -146,32 +148,32 @@
                         </div>
                     </div>
 
-            </div>
+                </div>
 
-                    <div class="catalog_element_one catalog_element box">
+                <div class="catalog_element_one catalog_element box">
                     <img src="img/catalog/ryan-kwok-S1kOsHqGrw0-unsplash.png" alt="">
 
-                        <div>
-                            <div class="info_element">
-                                <div class="info_left">
-                                    <p class="info_left">Комплект белья</p>
-                                </div>
-                                <div class="info_right">
-                                    <p>Ткань сатин</p>
-                                </div>
+                    <div>
+                        <div class="info_element">
+                            <div class="info_left">
+                                <p class="info_left">Комплект белья</p>
                             </div>
-                            <div class="info_element">
-                                <div class="info_element_left_bar">
-                                    <h2>Grey</h2>
-                                    <h3>8600 ₽</h3>
-                                </div>
-                                <div class="info_element_right_bar">
-                                    <p><a href="#">Подробнее</a></p>
-                                </div>
+                            <div class="info_right">
+                                <p>Ткань сатин</p>
                             </div>
                         </div>
-
+                        <div class="info_element">
+                            <div class="info_element_left_bar">
+                                <h2>Grey</h2>
+                                <h3>8600 ₽</h3>
+                            </div>
+                            <div class="info_element_right_bar">
+                                <p><a href="#">Подробнее</a></p>
+                            </div>
+                        </div>
                     </div>
+
+                </div>
 
             </div>
         </div>

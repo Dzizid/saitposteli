@@ -1,14 +1,9 @@
 <?php
 
-session_start();
-require_once 'сonnection.php';
-
-
-
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -18,10 +13,16 @@ require_once 'сonnection.php';
     <link rel="stylesheet" href="sait/css/basket.css">
     <link rel="stylesheet" href="sait/css/design.css">
     <link rel="stylesheet" href="sait/css/footer.css">
+
+    <script src="sait/js/jquery-ui.js"></script>
+    <script src="sait/js/jquery.js"></script>
     <link rel="script" href="sait/js/basket.js">
+    <script src="sait/js/menu.js"></script>
+    <script src="sait/js/myCart.js"></script>
+
     <title>Basket</title>
 </head>
-<body>
+<body onload="showMyCart()">
 
 <header class="container_max">
 
@@ -93,6 +94,8 @@ require_once 'сonnection.php';
 
 <main>
 
+
+
     <div class="container_basket">
         <h1>BAG</h1>
         <div class="container_basket_product" id="in-check">
@@ -103,94 +106,13 @@ require_once 'сonnection.php';
             </div>
             <hr>
             <div class="mess">
-                <div class="basket_product">
-                        <div class="basket_product_one">
-                            <div class="img_wost">
-                                <img src="img/logo/jake-charles-LyALgKdcUVI-unsplash.png" alt="">
-                            </div>
 
-                            <div class="menu_one">
-                                <div class="menu_one_top">
-                                    <h2>Комплект белья</h2>
-                                    <h4>Rain</h4>
+                <div class="basket_product in-check" id="in-check">
 
-                                    <h5>Размер и количество</h5>
-                                </div>
-                                <div class="info_text">
-                                    <div class="info_text_left">
-                                        <h3>Простынь</h3>
-                                        <h3>Пододеяльник</h3>
-                                        <h3>Наволочка</h3>
-                                        <h3>Материал</h3>
-                                    </div>
-
-                                    <div class="info_text_left">
-                                        <p>190*220, 1 шт</p>
-                                        <p>180*215, 1 шт</p>
-                                        <p>70*70, 2 шт</p>
-                                        <p>сатин</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        <div class="praise">
-                            <h1>7400 ₽</h1>
-                        </div>
-
-                        <div class="all">
-                            <img src="img/logo/minus.png" alt="">
-                            <h2>1</h2>
-                            <img src="img/logo/plus.png" alt="">
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-
-                <div class="basket_product">
-                    <div class="basket_product_one">
-                        <div class="img_wost">
-                            <img src="img/catalog/nathan-oakley-Ad3E_eT2bmM-unsplash.png" alt="">
-                        </div>
-
-                        <div class="menu_one">
-                            <div class="menu_one_top">
-                                <h2>Комплект белья</h2>
-                                <h4>Rain</h4>
-
-                                <h5>Размер и количество</h5>
-                            </div>
-                            <div class="info_text">
-                                <div class="info_text_left">
-                                    <h3>Простынь</h3>
-                                    <h3>Пододеяльник</h3>
-                                    <h3>Наволочка</h3>
-                                    <h3>Материал</h3>
-                                </div>
-
-                                <div class="info_text_left">
-                                    <p>190*220, 1 шт</p>
-                                    <p>180*215, 1 шт</p>
-                                    <p>70*70, 2 шт</p>
-                                    <p>сатин</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="praise">
-                            <h1>7400 ₽</h1>
-                        </div>
-
-                        <div class="all">
-                            <img src="img/logo/minus.png" alt="">
-                            <h2>1</h2>
-                            <img src="img/logo/plus.png" alt="">
-                        </div>
-                    </div>
-                    <hr>
                 </div>
 
                 <div class="summ">
-                    <p>Сумма: 14800 ₽</p>
+
                 </div>
 
                 <div class="design">
@@ -301,106 +223,13 @@ require_once 'сonnection.php';
 
         </div>
 
-        <div class="container_basket_product_mobile">
-            <hr class="hr_mobile">
-            <div class="element_mobile_basket">
-                <div class="mobile_basket">
-                    <div class="img_mobile_basket">
-                    <img src="img/logo/jake-charles-LyALgKdcUVI-unsplash.png" alt="">
-                    </div>
-                    <div class="mobile_basket_info">
-                            <h2>Комплект белья</h2>
-                        <div class="number_basket">
-                            <h3>Rain</h3>
-                            <select class="mobile_select">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
-                        </div>
-                        <div class="info_basket">
-                        <h4>Размер и количество</h4>
-                            <div class="info_text">
-                                <div class="info_text_left">
-                                    <h3>Простынь</h3>
-                                    <h3>Пододеяльник</h3>
-                                    <h3>Наволочка</h3>
-                                    <h3>Материал</h3>
-                                </div>
+        <div class="container_basket_product_mobile" id="in-check">
+            <div class="element_mobile_basket" id="in-check">
 
-                                <div class="info_text_left">
-                                    <p>190*220, 1 шт</p>
-                                    <p>180*215, 1 шт</p>
-                                    <p>70*70, 2 шт</p>
-                                    <p>сатин</p>
-                                </div>
-                            </div>
-                            <div class="basket_click">
-                                <h4>Цена:</h4>
-                                <p>7400 ₽</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="hr_mobile">
-            </div>
-
-            <div class="element_mobile_basket">
-                <div class="mobile_basket">
-                    <div class="img_mobile_basket">
-                        <img src="img/logo/jake-charles-LyALgKdcUVI-unsplash.png" alt="">
-                    </div>
-                    <div class="mobile_basket_info">
-                        <h2>Комплект белья</h2>
-                        <div class="number_basket">
-                            <h3>Rain</h3>
-                            <select class="mobile_select">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
-                        </div>
-                        <div class="info_basket">
-                            <h4>Размер и количество</h4>
-                            <div class="info_text">
-                                <div class="info_text_left">
-                                    <h3>Простынь</h3>
-                                    <h3>Пододеяльник</h3>
-                                    <h3>Наволочка</h3>
-                                    <h3>Материал</h3>
-                                </div>
-
-                                <div class="info_text_left">
-                                    <p>190*220, 1 шт</p>
-                                    <p>180*215, 1 шт</p>
-                                    <p>70*70, 2 шт</p>
-                                    <p>сатин</p>
-                                </div>
-                            </div>
-                            <div class="basket_click">
-                                <h4>Цена:</h4>
-                                <p>7400 ₽</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="hr_mobile">
             </div>
 
             <div class="summ">
-                <p>Сумма: 14800 ₽</p>
+
             </div>
 
             <div class="design_mobile">
@@ -498,10 +327,10 @@ require_once 'сonnection.php';
                                     </label>
                                 </div>
                                 <div class="summ_num">
-                                    <h2>Итоговая сумма: 16000 ₽</h2>
+                                    <!--<h2>Итоговая сумма: 16000 ₽</h2>-->
                                 </div>
                                 <div class="button_shop">
-                                    <h3>Заказать</h3>
+                                    <!--<h3>Заказать</h3>-->
                                 </div>
                             </div>
                         </div>
@@ -518,8 +347,5 @@ require_once 'сonnection.php';
 include 'footer.php';
 ?>
 
-<script src="sait/js/basket.js"></script>
-<script src="sait/js/menu.js"></script>
-<script src="sait/js/basket.js"></script>
 </body>
 </html>

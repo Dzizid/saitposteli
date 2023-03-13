@@ -11,6 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="sait/css/home.css">
     <link rel="stylesheet" href="sait/css/footer.css">
+    <script src="sait/js/jquery-ui.js"></script>
+    <script src="sait/js/jquery.js"></script>
+    <script src="sait/js/menu.js"></script>
+    <script src="sait/js/myCart.js"></script>
     <title>Bella</title>
 </head>
 <body>
@@ -247,6 +251,6 @@
     <?php
     include 'footer.php';
     ?>
-<script src="sait/js/menu.js"></script>
+
 </body>
 </html>

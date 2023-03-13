@@ -12,7 +12,12 @@ include 'сonnection.php';
     <link rel="stylesheet" href="sait/css/home.css">
     <link rel="stylesheet" href="sait/css/catalog.css">
     <link rel="stylesheet" href="sait/css/footer.css">
-    <link rel="script" href="sait/js/catalog.js">
+    <script src="sait/js/jquery-ui.js"></script>
+    <script src="sait/js/jquery.js"></script>
+    <script src="sait/js/catalog.js"></script>
+    <script src="sait/js/menu.js"></script>
+    <script src="sait/js/myCart.js"></script>
+
     <title>Catalog</title>
 </head>
 <body>
@@ -162,7 +167,6 @@ include 'сonnection.php';
         include 'footer.php';
     ?>
 
-<script src="sait/js/catalog.js"></script>
-<script src="sait/js/menu.js"></script>
+
 </body>
 </html>

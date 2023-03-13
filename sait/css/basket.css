@@ -196,6 +196,14 @@ hr {
 
 @media (max-width: 767px) {
     .container_basket_product {
+
+    }
+
+    .basket_product {
+        display: none;
+    }
+
+    .design {
         display: none;
     }
 
@@ -293,4 +301,8 @@ hr {
         display: none;
         padding-top: 10vw;
     }
+}
+
+#in-check {
+
 }

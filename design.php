@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="sait/css/home.css">
     <link rel="stylesheet" href="sait/css/basket.css">
     <link rel="stylesheet" href="sait/css/design.css">
+    <script src="sait/js/jquery-ui.js"></script>
+    <script src="sait/js/jquery.js"></script>
+    <script src="sait/js/myCart.js"></script>
     <title>Basket</title>
 </head>
 <body>
@@ -110,6 +113,6 @@
     </div>
 </div>
 
-<script src="design.js"></script>
+
 </body>
 </html>

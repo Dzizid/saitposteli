@@ -4,8 +4,10 @@ require_once 'сonnection.php';
 $productid = $_GET['id'];
 $product = mysqli_query($conn, "SELECT * FROM `Towar` WHERE `id` = '$productid'");
 $product = mysqli_fetch_assoc($product);
-echo '
 
+
+
+echo '
 <div class="card">
     <div class="all_card">
         <div class="top_card">
@@ -61,7 +63,9 @@ echo '
                         </div>
                     </div>
                     <div class="basket">
-                        <a href="?card=products&action=add&id=' . $product['id'] . ' " data-id = "' . $product['id'] . '"><h3>В корзину</h3></a>
+                        <form action="basket.php" method="post">
+                            <h3><input type="button" value="В корзину" onclick="addToCart('. $product['id'] .')"></h3>
+                        </form>
                         <div class="price">
                             <h4>Цена:</h4>
                             <p>'. $product['price'] .'</p>
@@ -99,7 +103,9 @@ echo '
 
                 <div class="shop_basket">
                     <div class="basket_h">
-                        <h3>В корзину</h3>
+                        <form action="basket.php" method="post">
+                            <h3><input type="button" value="В корзину" onclick="addToCart('. $product['id'] .')"></h3>
+                        </form>
                     </div>
                     <div class="many">
                         <h4>Цена:</h4>

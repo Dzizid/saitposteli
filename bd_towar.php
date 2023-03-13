@@ -4,32 +4,32 @@ $sql = "SELECT * FROM Towar";
 if ($result = $conn->query($sql)) {
 foreach ($result as $row) {
 
-$towarid = $row["id"];
-$towarname = $row["name"];
-$towarprice = $row["price"];
-$towartextile = $row["textile"];
-$towartype = $row["type"];
-$towarimg = $row["img"];
+$productid = $row["id"];
+$productname = $row["name"];
+$productprice = $row["price"];
+$producttextile = $row["textile"];
+$producttype = $row["type"];
+$productimg = $row["img"];
 
 echo '<div class="catalog_element_one catalog_element box">
-    <img src="'. $towarimg .'" alt="">
+    <img src="'. $productimg .'" alt="">
 
     <div>
         <div class="info_element">
             <div class="info_left">
-                <p class="info_left">'. $towartype .'</p>
+                <p class="info_left">'. $producttype .'</p>
             </div>
             <div class="info_right">
-                <p>'. $towartextile .'</p>
+                <p>'. $producttextile .'</p>
             </div>
         </div>
         <div class="info_element">
             <div class="info_element_left_bar">
-                <h2>'. $towarname .'</h2>
-                <h3>'. $towarprice .' ₽</h3>
+                <h2>'. $productname .'</h2>
+                <h3>'. $productprice .' ₽</h3>
             </div>
             <div class="info_element_right_bar">
-                <p><a href="cart.php?id='. $towarid .'">Подробнее</a></p>
+                <p><a href="cart.php?id='. $productid .'">Подробнее</a></p>
             </div>
         </div>
     </div>
